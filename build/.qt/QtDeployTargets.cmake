@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_SlotMachineMVP_FILE /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP)
+set(__QT_DEPLOY_TARGET_SlotMachineMVP_TYPE EXECUTABLE)
