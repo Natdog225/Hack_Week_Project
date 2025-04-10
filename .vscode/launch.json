@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+	
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/nathan/Repositories/Hack_Week/Hack_Week_Project",
+      "program": "/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/Debug/outDebug"
+    }
+  ]
+}
