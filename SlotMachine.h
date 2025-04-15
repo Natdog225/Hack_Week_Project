@@ -3,6 +3,7 @@
 
 #include "Reel.h"
 #include "Symbol.h"
+#include "PayoutRule.h"
 #include <vector>
 
 /**
@@ -37,7 +38,9 @@ private:
 	std::vector<Reel> reels;   // individual Reel objects
 	int credits;			   // current credit balance
 	int currentBet;			   // Cost per spin (Fixed for now, but it'd be cool to allow custom betting)
-	const int WIN_AMOUNT = 10; // Amount awarded for a simple win (fixed for MVP, again, future customization)
+	std::vector<PayoutRule> payoutTable;
+
+	
 };
 
 #endif // SLOTMACHINE_H
