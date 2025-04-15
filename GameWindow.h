@@ -44,6 +44,7 @@ private:
 	// --- Helper Methods ---
 	void setupUI();		  // Helper to create widgets
 	void updateDisplay(); // Helper to update labels based on what the machine says
+	void connectReelSignals(); // Connect reel signals to update display
 };
 
 #endif

@@ -3,11 +3,14 @@
 #include <chrono>
 
 // Constructor
-Reel::Reel() : currentSymbolIndex(0)
+Reel::Reel(QObject *parent) : QObject(parent), currentSymbolIndex(0), spinDuration(2000), elapsedSpinTime(0)
 {
 	// Seed the random number generator.
 	unsigned seed = std::chrono::high_resolution_clock::now().time_since_epoch().count();
 	randomGenerator.seed(seed);
+
+	// Connect the timer to updateSpin
+	connect(&spinTimer, &QTimer::timeout, this, &Reel::updateSpin);
 }
 
 // Add a single symbol
@@ -31,19 +34,29 @@ void Reel::setSymbolStrip(const std::vector<Symbol> &strip)
 	}
 }
 
-void Reel::spin()
+void Reel::startSpin()
 {
 	if (symbolStrip.empty())
 	{
-		currentSymbolIndex = -1; // Or throw an exception/errror?
+		return;
+	}
+	elapsedSpinTime = 0;
+	spinTimer.start(50); // Update every 50ms
+}
+
+void Reel::updateSpin()
+{
+	if (elapsedSpinTime >= spinDuration)
+	{
+		spinTimer.stop();
 		return;
 	}
 
-	// based on the current size of the symbol strip
-	std::uniform_int_distribution<int> distribution(0, symbolStrip.size() - 1);
+	std::uniform_int_distribution<int> dist(0, symbolStrip.size() - 1);
+	currentSymbolIndex = dist(randomGenerator);
 
-	// random index
-	currentSymbolIndex = distribution(randomGenerator);
+	emit symbolChange(symbolStrip.at(currentSymbolIndex));
+	elapsedSpinTime += 50; // Increment elapsed time
 }
 
 Symbol Reel::getCurrentSymbol() const

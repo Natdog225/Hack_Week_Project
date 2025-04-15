@@ -1,24 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'GameWindow.h'
 **
-** Created by: The Qt Meta Object Compiler version 69 (Qt 6.9.0)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../../../GameWindow.h"
 #include <QtCore/qmetatype.h>
-
-#include <QtCore/qtmochelpers.h>
-
-#include <memory>
-
-
-#include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'GameWindow.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 69
-#error "This file was generated using the moc from 6.9.0. It"
+#elif Q_MOC_OUTPUT_REVISION != 68
+#error "This file was generated using the moc from 6.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -27,47 +21,73 @@
 #define Q_CONSTINIT
 #endif
 
+QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
-struct qt_meta_tag_ZN10GameWindowE_t {};
+struct qt_meta_stringdata_GameWindow_t {
+    uint offsetsAndSizes[6];
+    char stringdata0[11];
+    char stringdata1[24];
+    char stringdata2[1];
+};
+#define QT_MOC_LITERAL(ofs, len) \
+    uint(sizeof(qt_meta_stringdata_GameWindow_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_GameWindow_t qt_meta_stringdata_GameWindow = {
+    {
+        QT_MOC_LITERAL(0, 10),  // "GameWindow"
+        QT_MOC_LITERAL(11, 23),  // "handleSpinButtonClicked"
+        QT_MOC_LITERAL(35, 0)   // ""
+    },
+    "GameWindow",
+    "handleSpinButtonClicked",
+    ""
+};
+#undef QT_MOC_LITERAL
 } // unnamed namespace
 
-template <> constexpr inline auto GameWindow::qt_create_metaobjectdata<qt_meta_tag_ZN10GameWindowE_t>()
-{
-    namespace QMC = QtMocConstants;
-    QtMocHelpers::StringRefStorage qt_stringData {
-        "GameWindow",
-        "handleSpinButtonClicked",
-        ""
-    };
+Q_CONSTINIT static const uint qt_meta_data_GameWindow[] = {
 
-    QtMocHelpers::UintData qt_methods {
-        // Slot 'handleSpinButtonClicked'
-        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-    };
-    QtMocHelpers::UintData qt_properties {
-    };
-    QtMocHelpers::UintData qt_enums {
-    };
-    return QtMocHelpers::metaObjectData<GameWindow, qt_meta_tag_ZN10GameWindowE_t>(QMC::MetaObjectFlag{}, qt_stringData,
-            qt_methods, qt_properties, qt_enums);
-}
+ // content:
+      10,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       1,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   20,    2, 0x08,    1 /* Private */,
+
+ // slots: parameters
+    QMetaType::Void,
+
+       0        // eod
+};
+
 Q_CONSTINIT const QMetaObject GameWindow::staticMetaObject = { {
     QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN10GameWindowE_t>.stringdata,
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN10GameWindowE_t>.data,
+    qt_meta_stringdata_GameWindow.offsetsAndSizes,
+    qt_meta_data_GameWindow,
     qt_static_metacall,
     nullptr,
-    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN10GameWindowE_t>.metaTypes,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_GameWindow_t,
+        // Q_OBJECT / Q_GADGET
+        QtPrivate::TypeAndForceComplete<GameWindow, std::true_type>,
+        // method 'handleSpinButtonClicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
+    >,
     nullptr
 } };
 
 void GameWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    auto *_t = static_cast<GameWindow *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
+        auto *_t = static_cast<GameWindow *>(_o);
+        (void)_t;
         switch (_id) {
         case 0: _t->handleSpinButtonClicked(); break;
         default: ;
@@ -84,7 +104,7 @@ const QMetaObject *GameWindow::metaObject() const
 void *GameWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN10GameWindowE_t>.strings))
+    if (!strcmp(_clname, qt_meta_stringdata_GameWindow.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
@@ -98,8 +118,7 @@ int GameWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
         _id -= 1;
-    }
-    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 1)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
         _id -= 1;
@@ -107,3 +126,4 @@ int GameWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     return _id;
 }
 QT_WARNING_POP
+QT_END_MOC_NAMESPACE

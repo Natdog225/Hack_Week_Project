@@ -69,7 +69,7 @@ bool SlotMachine::spinReels()
 	// Spin reels
 	for (Reel &reel : reels)
 	{
-		reel.spin();
+		reel.startSpin();
 	}
 	return true;
 }
@@ -156,4 +156,24 @@ Symbol SlotMachine::getSymbolAt(int reelIndex) const
 int SlotMachine::getReelCount() const
 {
 	return reels.size();
+}
+
+// Get a specific reel by index
+
+Reel* SlotMachine::getReel(int index)
+{
+    if (index < 0 || index >= reels.size())
+    {
+        return nullptr;
+    }
+    return &reels[index];
+}
+
+const Reel* SlotMachine::getReel(int index) const
+{
+    if (index < 0 || index >= reels.size())
+    {
+        return nullptr;
+    }
+    return &reels[index];
 }

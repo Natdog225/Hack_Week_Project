@@ -31,6 +31,10 @@ public:
 	// Get the number of reels
 	int getReelCount() const;
 
+	// Get a specific reel by index
+	Reel* getReel(int index);
+	const Reel* getReel(int index) const;
+
 private:
 	// Helper function to load default symbols onto the reels
 	void initializeReels();

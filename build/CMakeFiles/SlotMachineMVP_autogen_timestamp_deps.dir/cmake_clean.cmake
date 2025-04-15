@@ -1,3 +1,6 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/SlotMachineMVP_autogen_timestamp_deps"
+)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

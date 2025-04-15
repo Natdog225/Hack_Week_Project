@@ -7,6 +7,18 @@
 #include <QVBoxLayout>
 #include <QString> // For converting C++ strings/ints to Qt strings
 
+// Connect reel signals to update display
+void GameWindow::connectReelSignals() {
+    for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i) {
+        const Reel* reel = slotMachine->getReel(i);
+        if (reel) {
+            connect(reel, &Reel::symbolChange, this, [this, i](const Symbol& symbol) {
+                reelLabels[i]->setText(QString::fromStdString(symbol.id));
+            });
+        }
+    }
+}
+
 // Constructor
 GameWindow::GameWindow(SlotMachine* machineLogic, QWidget *parent)
 	: QWidget(parent), slotMachine(machineLogic)
@@ -16,6 +28,7 @@ GameWindow::GameWindow(SlotMachine* machineLogic, QWidget *parent)
 		throw std::runtime_error("GameWindow requires a valid SlotMachine instance.");
 	}
 	setupUI();
+	connectReelSignals(); // Connect reel signals to update display
 	updateDisplay(); // Set initial display state
 }
 
@@ -57,19 +70,18 @@ void GameWindow::setupUI() {
 void GameWindow::handleSpinButtonClicked() {
 	std::cout << "We hope you have terrible luck!" << std::endl; // Debug output for now
 
-	// --- Logic ideally? ---
-	// 1. Call slotMachine->spinReels()
-	// 2. Call slotMachine->checkWinCondition()
-	// 3. Call updateDisplay() to refresh the UI
-
-	// potentially spin/check here directly for testing, then refine
-	 if (slotMachine->spinReels()) {
-		slotMachine->checkWinCondition();
-		updateDisplay();
-	 } else {
-		// Update display to show "Not enough credits" or too poor
+	if (slotMachine->getCredits() <= 0)
+	{
 		messageLabel->setText("You are poor!");
-	 }
+		return;
+	}
+	// spinnin time
+	for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i) {
+		Reel* reel = slotMachine->getReel(i);
+		if (reel) {
+			reel->startSpin();
+		}
+	}
 }
 
 void GameWindow::updateDisplay() {

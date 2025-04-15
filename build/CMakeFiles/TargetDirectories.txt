@@ -1,5 +1,5 @@
-/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP.dir
-/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/edit_cache.dir
-/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/rebuild_cache.dir
-/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir
-/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP_autogen.dir
+/home/mint/Documents/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP.dir
+/home/mint/Documents/Hack_Week_Project/build/CMakeFiles/edit_cache.dir
+/home/mint/Documents/Hack_Week_Project/build/CMakeFiles/rebuild_cache.dir
+/home/mint/Documents/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir
+/home/mint/Documents/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP_autogen.dir
