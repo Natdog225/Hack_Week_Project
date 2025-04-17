@@ -87,4 +87,3 @@ void GameWindow::updateDisplay() {
 	// Reset message label
 	// messageLabel->setText("Spin!"); // Or keep previous message
 }
-
