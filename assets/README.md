@@ -1,6 +1,8 @@
 # slot machine symbols
 
-## fruits
+## traditional symbols
+
+### fruits
 
 - [ ] orange
 - [ ] grapes
@@ -12,7 +14,7 @@
 - [ ] blueberry
 - [ ] cherries
 
-## objects
+### objects
 
 - [ ] bell
 - [ ] heart
@@ -52,3 +54,8 @@
 24. coffee
 25. hello, world!
 26. code
+27. fly swatter
+28. hacker
+29. lumi mascot
+30. "Atlas"
+31. standup stage
