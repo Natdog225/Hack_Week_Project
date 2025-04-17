@@ -8,37 +8,42 @@
 #include <QString> // For converting C++ strings/ints to Qt strings
 
 // Connect reel signals to update display
-void GameWindow::connectReelSignals() {
-    for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i) {
-        const Reel* reel = slotMachine->getReel(i);
-        if (reel) {
-            connect(reel, &Reel::symbolChange, this, [this, i](const Symbol& symbol) {
-                reelLabels[i]->setText(QString::fromStdString(symbol.id));
-            });
-        }
-    }
+void GameWindow::connectReelSignals()
+{
+	for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i)
+	{
+		const Reel *reel = slotMachine->getReel(i);
+		if (reel)
+		{
+			connect(reel, &Reel::symbolChange, this, [this, i](const Symbol &symbol)
+					{ reelLabels[i]->setText(QString::fromStdString(symbol.id)); });
+		}
+	}
 }
 
 // Constructor
-GameWindow::GameWindow(SlotMachine* machineLogic, QWidget *parent)
+GameWindow::GameWindow(SlotMachine *machineLogic, QWidget *parent)
 	: QWidget(parent), slotMachine(machineLogic)
 {
-	if (!slotMachine) {
+	if (!slotMachine)
+	{
 		// For now, maybe just print an error or throw
 		throw std::runtime_error("GameWindow requires a valid SlotMachine instance.");
 	}
 	setupUI();
 	connectReelSignals(); // Connect reel signals to update display
-	updateDisplay(); // Set initial display state
+	updateDisplay();	  // Set initial display state
 }
 
 // Helper function to create and arrange UI elements
-void GameWindow::setupUI() {
+void GameWindow::setupUI()
+{
 	// --- Create Widgets ---
 	reelLayout = new QHBoxLayout(); // Layout for reels
-	for (int i = 0; i < 3; ++i) { // Assuming 3 reels for MVP
-		reelLabels[i] = new QLabel("---"); // Placeholder text
-		reelLabels[i]->setFixedSize(100, 100); // Give reels a fixed size
+	for (int i = 0; i < 3; ++i)
+	{												  // Assuming 3 reels for MVP
+		reelLabels[i] = new QLabel("---");			  // Placeholder text
+		reelLabels[i]->setFixedSize(100, 100);		  // Give reels a fixed size
 		reelLabels[i]->setAlignment(Qt::AlignCenter); // Center text
 		// basic styling
 		reelLabels[i]->setFrameStyle(QFrame::Panel | QFrame::Sunken);
@@ -52,11 +57,11 @@ void GameWindow::setupUI() {
 	messageLabel->setAlignment(Qt::AlignCenter);
 
 	// --- Create Main Layout ---
-	mainLayout = new QVBoxLayout(this); // Main layout
-	mainLayout->addLayout(reelLayout);  // Add the reel layout
-	mainLayout->addWidget(spinButton);  // Add the spin button
-	mainLayout->addWidget(creditsLabel);// Add the credits label
-	mainLayout->addWidget(messageLabel);// Add the message label
+	mainLayout = new QVBoxLayout(this);	 // Main layout
+	mainLayout->addLayout(reelLayout);	 // Add the reel layout
+	mainLayout->addWidget(spinButton);	 // Add the spin button
+	mainLayout->addWidget(creditsLabel); // Add the credits label
+	mainLayout->addWidget(messageLabel); // Add the message label
 
 	// --- Set Window Properties ---
 	setWindowTitle("Slot Machine MVP");
@@ -67,7 +72,8 @@ void GameWindow::setupUI() {
 }
 
 // to handle spin button clicks
-void GameWindow::handleSpinButtonClicked() {
+void GameWindow::handleSpinButtonClicked()
+{
 	std::cout << "We hope you have terrible luck!" << std::endl; // Debug output for now
 
 	if (slotMachine->getCredits() <= 0)
@@ -76,21 +82,26 @@ void GameWindow::handleSpinButtonClicked() {
 		return;
 	}
 	// spinnin time
-	for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i) {
-		Reel* reel = slotMachine->getReel(i);
-		if (reel) {
+	for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i)
+	{
+		Reel *reel = slotMachine->getReel(i);
+		if (reel)
+		{
 			reel->startSpin();
 		}
 	}
 }
 
-void GameWindow::updateDisplay() {
+void GameWindow::updateDisplay()
+{
 	// Update reel labels
-	for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i) {
-		 if(reelLabels[i]) {
-			 Symbol currentSymbol = slotMachine->getSymbolAt(i);
-			 reelLabels[i]->setText(QString::fromStdString(currentSymbol.id));
-		 }
+	for (int i = 0; i < slotMachine->getReelCount() && i < 3; ++i)
+	{
+		if (reelLabels[i])
+		{
+			Symbol currentSymbol = slotMachine->getSymbolAt(i);
+			reelLabels[i]->setText(QString::fromStdString(currentSymbol.id));
+		}
 	}
 
 	// Update credits
@@ -99,4 +110,3 @@ void GameWindow::updateDisplay() {
 	// Reset message label
 	// messageLabel->setText("Spin!"); // Or keep previous message
 }
-
