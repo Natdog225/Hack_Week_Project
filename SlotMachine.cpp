@@ -5,7 +5,7 @@
 SlotMachine::SlotMachine(int numReels, int startingCredits)
 	: reels(numReels),
 	  credits(startingCredits),
-	  currentBet(1) // Fixed bet for MVP
+	  currentBet(5) // Fixed bet for MVP
 {
 	if (numReels <= 0)
 	{
@@ -13,13 +13,13 @@ SlotMachine::SlotMachine(int numReels, int startingCredits)
 	}
 	if (numReels != 3)
 	{
-		throw std::invalid_argument("Mvp currently assumes 3 reels");
+		throw std::invalid_argument("Mvp currently goes for 3 reels");
 	}
 	initializeReels();
 
 	// --- Payout Rules ---
 	// IMPORTANT: Replace "SEVEN", "CHERRY", "LEMON" with the actual Symbol::id strings
-	// finalized by Chepe once available!
+	// finalized by Chepe once available
 	payoutTable = {
 		// Rule 1: Three SEVENs pay 100
 		PayoutRule({"SEVEN", "SEVEN", "SEVEN"}, 100),
