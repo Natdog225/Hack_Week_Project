@@ -2388,6 +2388,7 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/GameWindow.h \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h \
@@ -4570,6 +4571,7 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: /Users/nathan/Repositories/Hack
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h
@@ -6746,6 +6748,7 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/GameWindow.h \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h \
@@ -10113,6 +10116,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
+
+/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/exception.h:
 
