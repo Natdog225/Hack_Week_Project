@@ -39,7 +39,7 @@
 - [ ] robot
 - [x] fly swatter
 - [x] package
-- [ ] wrench
+- [x] wrench
 - [ ] magnifying glass
 - [ ] eraser
 - [ ] fire extinguisher
