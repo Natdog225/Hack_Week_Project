@@ -38,7 +38,7 @@
 - [ ] coffee
 - [ ] robot
 - [x] fly swatter
-- [ ] package
+- [x] package
 - [ ] wrench
 - [ ] magnifying glass
 - [ ] eraser
