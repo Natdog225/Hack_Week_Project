@@ -33,7 +33,7 @@
 - [x] lumi mascot
 - [ ] computer
 - [ ] floppy disk
-- [ ] folder icon
+- [x] folder icon
 - [ ] motherboard
 - [ ] coffee
 - [ ] robot
