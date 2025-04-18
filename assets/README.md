@@ -26,38 +26,42 @@
 - [ ] diamond
 - [ ] four-leaf clover
 
-## alternative symbol ideas
+## themed symbol ideas
 
-1. computer
-29. lumi mascot
-2. floppy disk
-21. motherboard
-3. server
-24. coffee
-4. package
-5. wrench
-27. fly swatter
-7. brain
-8. bug
-9. folder icon
-10. robot
+### accepted
+
+1. lumi mascot
+2. computer
+3. floppy disk
+4. folder icon
+5. motherboard
+6. coffee
+7. robot
+8. fly swatter
+9. package
+10. wrench
 11. magnifying glass
-16. trap
-12. wizard
-18. fire extinguisher
-6. network/internet
-17. broom
-13. bomb
-14. fire
-15. meme
-19. eraser
-20. test tube
-22. power button
-23. mouse
-25. hello, world!
-26. code
-28. hacker
-30. "Atlas"
-31. standup stage
-32. blue screen of death
-33. rick roll
+12. eraser
+13. fire extinguisher
+14. trap
+15. blue screen of death - with lenny face
+16. rick roll - with npc face
+
+### declined
+
+1. broom
+2. server
+3. brain
+4. network/internet
+5. mouse
+6. wizard
+7. bomb
+8. fire
+9. meme
+10. test tube
+11. power button
+12. hello, world!
+13. code
+14. hacker
+15. "Atlas"
+16. stand-up stage
