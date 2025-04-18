@@ -4,48 +4,48 @@
 
 ### fruits
 
-- [ ] orange
-- [ ] grapes
-- [ ] bananas
-- [ ] cherry
+- orange
+- grapes
+- bananas
+- cherry
 
-- [ ] watermelon
-- [ ] lemon
-- [ ] blueberry
-- [ ] cherries
+- watermelon
+- lemon
+- blueberry
+- cherries
 
 ### objects
 
-- [ ] bell
-- [ ] heart
-- [ ] seven
-- [ ] coin
+- bell
+- heart
+- seven
+- coin
 
-- [ ] BAR
-- [ ] horseshoe
-- [ ] diamond
-- [ ] four-leaf clover
+- BAR
+- horseshoe
+- diamond
+- four-leaf clover
 
 ## themed symbol ideas
 
 ### accepted
 
-1. lumi mascot
-2. computer
-3. floppy disk
-4. folder icon
-5. motherboard
-6. coffee
-7. robot
-8. fly swatter
-9. package
-10. wrench
-11. magnifying glass
-12. eraser
-13. fire extinguisher
-14. trap
-15. blue screen of death - with lenny face
-16. rick roll - with npc face
+- [x] lumi mascot
+- [ ] computer
+- [ ] floppy disk
+- [ ] folder icon
+- [ ] motherboard
+- [ ] coffee
+- [ ] robot
+- [x] fly swatter
+- [ ] package
+- [ ] wrench
+- [ ] magnifying glass
+- [ ] eraser
+- [ ] fire extinguisher
+- [ ] trap
+- [ ] blue screen of death - with lenny face
+- [ ] rick roll - with npc face
 
 ### declined
 
