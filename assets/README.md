@@ -36,7 +36,7 @@
 - [x] folder icon
 - [ ] motherboard
 - [ ] coffee
-- [ ] robot
+- [x] robot
 - [x] fly swatter
 - [x] package
 - [x] wrench
