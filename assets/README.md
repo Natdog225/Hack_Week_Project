@@ -40,7 +40,7 @@
 - [x] fly swatter
 - [x] package
 - [x] wrench
-- [ ] magnifying glass
+- [x] magnifying glass
 - [ ] eraser
 - [ ] fire extinguisher
 - [ ] trap
