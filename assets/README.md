@@ -41,7 +41,7 @@
 - [x] package
 - [x] wrench
 - [x] magnifying glass
-- [ ] eraser
+- [x] eraser
 - [ ] fire extinguisher
 - [ ] trap
 - [ ] blue screen of death - with lenny face
