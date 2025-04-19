@@ -35,7 +35,7 @@
 - [ ] floppy disk
 - [x] folder icon
 - [ ] motherboard
-- [ ] coffee
+- [x] coffee
 - [x] robot
 - [x] fly swatter
 - [x] package
