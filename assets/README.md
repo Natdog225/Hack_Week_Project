@@ -32,7 +32,7 @@
 
 - [x] lumi mascot
 - [ ] computer
-- [ ] floppy disk
+- [x] floppy disk
 - [x] folder icon
 - [ ] motherboard
 - [x] coffee
