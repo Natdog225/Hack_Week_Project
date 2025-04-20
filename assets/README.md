@@ -31,7 +31,7 @@
 ### accepted
 
 - [x] lumi mascot
-- [ ] computer
+- [x] computer
 - [x] floppy disk
 - [x] folder icon
 - [ ] motherboard
