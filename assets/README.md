@@ -42,7 +42,7 @@
 - [x] wrench
 - [x] magnifying glass
 - [x] eraser
-- [ ] fire extinguisher
+- [x] fire extinguisher
 - [ ] trap
 - [x] blue screen of death - with lenny face
 - [x] rick roll - with npc face
