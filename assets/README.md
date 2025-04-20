@@ -45,7 +45,7 @@
 - [ ] fire extinguisher
 - [ ] trap
 - [x] blue screen of death - with lenny face
-- [ ] rick roll - with npc face
+- [x] rick roll - with npc face
 
 ### declined
 
