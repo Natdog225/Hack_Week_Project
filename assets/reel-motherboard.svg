@@ -24,15 +24,15 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
-     inkscape:zoom="0.77350309"
-     inkscape:cx="51.066376"
-     inkscape:cy="100.83993"
+     inkscape:zoom="0.75743918"
+     inkscape:cx="40.267259"
+     inkscape:cy="112.22023"
      inkscape:window-width="1920"
      inkscape:window-height="1174"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" /><defs
+     inkscape:current-layer="svg1" /><defs
      id="defs1"><inkscape:path-effect
        effect="perspective-envelope"
        up_left_point="8.2016106,8.2016106"
@@ -49,9 +49,9 @@
        id="linearGradient30"
        inkscape:collect="always"><stop
          style="stop-color:#1ed2af;stop-opacity:1;"
-         offset="0.46250531"
+         offset="0.32358274"
          id="stop31" /><stop
-         style="stop-color:#64648c;stop-opacity:0;"
+         style="stop-color:#64648c;stop-opacity:0.59602475;"
          offset="1"
          id="stop32" /></linearGradient><inkscape:path-effect
        effect="bspline"
@@ -172,7 +172,8 @@
        fx="256"
        fy="256"
        r="374.52869"
-       gradientUnits="userSpaceOnUse" /></defs><style
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0070953,0,0,1.0248802,14.184674,11.750289)" /></defs><style
      type="text/css"
      id="style1">
 	.st0{fill:#00003C;}
@@ -208,14 +209,14 @@
 	.st0{fill:#00003C;}
 	.st1{fill:#64648C;}
 	.st2{fill:#1ED2AF;}
-</style><circle
-     style="display:inline;fill:url(#radialGradient32);fill-opacity:1;stroke:none;stroke-width:6.58862"
+</style><ellipse
+     style="display:inline;fill:url(#radialGradient32);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.6937"
      id="path30"
-     cx="256"
-     cy="256"
-     r="374.52869"
-     transform="translate(-1.069233e-6)"
-     inkscape:label="glow" /><g
+     cx="272.00107"
+     cy="274.11963"
+     inkscape:label="glow"
+     rx="377.1861"
+     ry="383.84705" /><g
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="motherboard"
