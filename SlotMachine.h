@@ -6,7 +6,7 @@
 #include <vector>
 #include <string>
 #include <numeric>
-#include <map>     // Potentially useful for paytable structure later
+#include <map>
 
 struct PayoutRule {
 	std::vector<std::string> combination;
@@ -41,6 +41,7 @@ public:
 private:
 	void initializeReels(); // Helper to load symbols
 	void initializePayoutTable(); // Helper to setup paytable rules
+	static const std::string WILD_SYMBOL_ID;
 
 	std::vector<Reel> reels;
 	int credits;
