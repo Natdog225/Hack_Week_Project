@@ -76,13 +76,36 @@ SlotMachineMVP_autogen/timestamp: CMakeFiles/SlotMachineMVP.dir/compiler_depend.
 	/opt/homebrew/bin/cmake -E cmake_autogen /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP_autogen.dir/AutogenInfo.json ""
 	/opt/homebrew/bin/cmake -E touch /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/timestamp
 
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/resources.qrc
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/SlotMachineMVP_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-file_folder.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-fly_swat.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-robot.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-fire_extinguisher.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-eraser.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-wrench.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-motherboard.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-rickroll.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-coffee_mug.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-package.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-lumi_mascot.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-blue_screen.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-floppy.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-computer.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-trap.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-magnifier.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /opt/homebrew/share/qt/libexec/rcc
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /opt/homebrew/share/qt/libexec/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
+	/opt/homebrew/bin/cmake -E cmake_autorcc /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
+
 CMakeFiles/SlotMachineMVP.dir/codegen:
 .PHONY : CMakeFiles/SlotMachineMVP.dir/codegen
 
 CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o: CMakeFiles/SlotMachineMVP.dir/flags.make
 CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o: SlotMachineMVP_autogen/mocs_compilation.cpp
 CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o: CMakeFiles/SlotMachineMVP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o -MF CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o -c /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/mocs_compilation.cpp
 
 CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.i: cmake_force
@@ -96,7 +119,7 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.s: cma
 CMakeFiles/SlotMachineMVP.dir/main.cpp.o: CMakeFiles/SlotMachineMVP.dir/flags.make
 CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/main.cpp
 CMakeFiles/SlotMachineMVP.dir/main.cpp.o: CMakeFiles/SlotMachineMVP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SlotMachineMVP.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SlotMachineMVP.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlotMachineMVP.dir/main.cpp.o -MF CMakeFiles/SlotMachineMVP.dir/main.cpp.o.d -o CMakeFiles/SlotMachineMVP.dir/main.cpp.o -c /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/main.cpp
 
 CMakeFiles/SlotMachineMVP.dir/main.cpp.i: cmake_force
@@ -110,7 +133,7 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.s: cmake_force
 CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o: CMakeFiles/SlotMachineMVP.dir/flags.make
 CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.cpp
 CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o: CMakeFiles/SlotMachineMVP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o -MF CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o.d -o CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o -c /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.cpp
 
 CMakeFiles/SlotMachineMVP.dir/Reel.cpp.i: cmake_force
@@ -124,7 +147,7 @@ CMakeFiles/SlotMachineMVP.dir/Reel.cpp.s: cmake_force
 CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: CMakeFiles/SlotMachineMVP.dir/flags.make
 CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.cpp
 CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: CMakeFiles/SlotMachineMVP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o -MF CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o.d -o CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o -c /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.cpp
 
 CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.i: cmake_force
@@ -138,7 +161,7 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.s: cmake_force
 CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: CMakeFiles/SlotMachineMVP.dir/flags.make
 CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/GameWindow.cpp
 CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: CMakeFiles/SlotMachineMVP.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o -MF CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o.d -o CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o -c /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/GameWindow.cpp
 
 CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.i: cmake_force
@@ -149,13 +172,28 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/GameWindow.cpp -o CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.s
 
+CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/SlotMachineMVP.dir/flags.make
+CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o: SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp
+CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/SlotMachineMVP.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp
+
+CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp > CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp -o CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 # Object files for target SlotMachineMVP
 SlotMachineMVP_OBJECTS = \
 "CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/SlotMachineMVP.dir/main.cpp.o" \
 "CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o" \
 "CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o" \
-"CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o"
+"CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o" \
+"CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target SlotMachineMVP
 SlotMachineMVP_EXTERNAL_OBJECTS =
@@ -165,12 +203,14 @@ SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/main.cpp.o
 SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/Reel.cpp.o
 SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o
 SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o
+SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o
 SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/build.make
 SlotMachineMVP: /opt/homebrew/lib/QtWidgets.framework/Versions/A/QtWidgets
+SlotMachineMVP: /opt/homebrew/lib/QtSvg.framework/Versions/A/QtSvg
 SlotMachineMVP: /opt/homebrew/lib/QtGui.framework/Versions/A/QtGui
 SlotMachineMVP: /opt/homebrew/lib/QtCore.framework/Versions/A/QtCore
 SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable SlotMachineMVP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable SlotMachineMVP"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SlotMachineMVP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +221,7 @@ CMakeFiles/SlotMachineMVP.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/SlotMachineMVP.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/SlotMachineMVP.dir/clean
 
+CMakeFiles/SlotMachineMVP.dir/depend: SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/SlotMachineMVP.dir/depend: SlotMachineMVP_autogen/timestamp
 	cd /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nathan/Repositories/Hack_Week/Hack_Week_Project /Users/nathan/Repositories/Hack_Week/Hack_Week_Project /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/SlotMachineMVP.dir/depend

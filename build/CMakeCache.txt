@@ -292,6 +292,12 @@ Qt6GuiTools_DIR:PATH=/opt/homebrew/lib/cmake/Qt6GuiTools
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=/opt/homebrew/lib/cmake/Qt6Gui
 
+//The directory containing a CMake configuration file for Qt6SvgPrivate.
+Qt6SvgPrivate_DIR:PATH=/opt/homebrew/lib/cmake/Qt6SvgPrivate
+
+//The directory containing a CMake configuration file for Qt6Svg.
+Qt6Svg_DIR:PATH=/opt/homebrew/lib/cmake/Qt6Svg
+
 //The directory containing a CMake configuration file for Qt6WidgetsPrivate.
 Qt6WidgetsPrivate_DIR:PATH=/opt/homebrew/lib/cmake/Qt6WidgetsPrivate
 
