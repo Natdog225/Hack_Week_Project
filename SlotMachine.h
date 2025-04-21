@@ -3,44 +3,51 @@
 
 #include "Reel.h"
 #include "Symbol.h"
-#include "PayoutRule.h"
 #include <vector>
+#include <string>
+#include <numeric>
+#include <map>
 
-/**
- * @brief Manages the overall state and logic of the slot machine game.
- */
-class SlotMachine
-{
+struct PayoutRule {
+	std::vector<std::string> combination;
+	int payoutAmount; // Payout for a 1-credit bet
+	PayoutRule(std::vector<std::string> combo, int payout)
+		: combination(std::move(combo)), payoutAmount(payout) {}
+};
+
+
+class SlotMachine {
 public:
-	// Initializes the machine with a specific number of reels and starting credits. Which we'll adjust as needed
+	// Constructor
 	explicit SlotMachine(int numReels = 3, int startingCredits = 100);
 
-	// Spin all the reels
-	// Returns true if the spin had enough money, false otherwise.
-	bool spinReels();
+	// --- Betting ---
+	// Set the bet amount for the next spin.
+	bool setSelectedBet(int bet);
+	int getSelectedBet() const;
+	// Get the list of allowed bet amounts (for GUI).
+	std::vector<int> getAllowedBets() const;
 
-	// Check if the current combination on the payline is a winning one
+	// --- Gameplay ---
+	// Spin all the reels (deducts selectedBet).
+	bool spinReels();
 	bool checkWinCondition();
 
-	// Get current credit balance
+	// --- State Accessors ---
 	int getCredits() const;
-
-	// Get the symbol currently showing on a specific reel's payline
 	Symbol getSymbolAt(int reelIndex) const;
-
-	// Get the number of reels
 	int getReelCount() const;
 
 private:
-	// Helper function to load default symbols onto the reels
-	void initializeReels();
+	void initializeReels(); // Helper to load symbols
+	void initializePayoutTable(); // Helper to setup paytable rules
+	static const std::string WILD_SYMBOL_ID;
 
-	std::vector<Reel> reels;   // individual Reel objects
-	int credits;			   // current credit balance
-	int currentBet;			   // Cost per spin (Fixed for now, but it'd be cool to allow custom betting)
-	std::vector<PayoutRule> payoutTable;
-
-	
+	std::vector<Reel> reels;
+	int credits;
+	int selectedBet; // Changed from currentBet
+	std::vector<int> allowedBets; // Store allowed bet values
+	std::vector<PayoutRule> payoutTable; // Store the payout rules
 };
 
 #endif // SLOTMACHINE_H

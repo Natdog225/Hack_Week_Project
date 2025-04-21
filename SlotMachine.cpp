@@ -1,11 +1,16 @@
 #include "SlotMachine.h"
 #include <stdexcept>
 #include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm> // For std::find
 
+const std::string SlotMachine::WILD_SYMBOL_ID = "RICKROLL";
+// Constructor
 SlotMachine::SlotMachine(int numReels, int startingCredits)
 	: reels(numReels),
 	  credits(startingCredits),
-	  currentBet(5) // Fixed bet for MVP
+	  selectedBet(1)
 {
 	if (numReels <= 0)
 	{
@@ -15,58 +20,129 @@ SlotMachine::SlotMachine(int numReels, int startingCredits)
 	{
 		throw std::invalid_argument("Mvp currently goes for 3 reels");
 	}
-	initializeReels();
 
-	// --- Payout Rules ---
-	// IMPORTANT: Replace "SEVEN", "CHERRY", "LEMON" with the actual Symbol::id strings
-	// finalized by Chepe once available
-	payoutTable = {
-		// Rule 1: Three SEVENs pay 100
-		PayoutRule({"SEVEN", "SEVEN", "SEVEN"}, 100),
-		// Rule 2: Three CHERRYs pay 20
-		PayoutRule({"CHERRY", "CHERRY", "CHERRY"}, 20),
-		// Rule 3: Three LEMONs pay 10
-		PayoutRule({"LEMON", "LEMON", "LEMON"}, 10)
-		// Rule 4: Wild card symbol for like 2 lemon + wild = 3 Lemon one.
-		// PayoutRule({"*", "*", "*"}, 5) // Requires wildcard handling
-	};
-	std::cout << "SlotMachine initialized with " << payoutTable.size() << " payout rules." << std::endl;
+	// Define allowed bets
+	allowedBets = {1, 5, 10, 15, 20, 25, 50, 100};
+	selectedBet = allowedBets[0]; // Default to the lowest bet
+
+	initializeReels();		 // Load symbols onto the reels
+	initializePayoutTable(); // Setup paytable rules
+	// SORTING LOGIC 
+	std::sort(payoutTable.begin(), payoutTable.end(),
+	[](const PayoutRule& a, const PayoutRule& b) {
+		// Sort highest payout first
+		return a.payoutAmount > b.payoutAmount;
+	});
+std::cout << "Payout table sorted by payout (descending)." << std::endl;
 }
 
-// Helper to load symbols
+// Helper to load final symbols onto the reels
 void SlotMachine::initializeReels()
 {
-	// Define the symbols available
-	std::vector<Symbol> mvpSymbols = {
-		Symbol("CHERRY", "path/to/cherry.png"), // placeholders
-		Symbol("LEMON", "path/to/lemon.png"),
-		Symbol("SEVEN", "path/to/seven.png")
-		// Add more symbols to the strip later on
-		// Symbol("BAR", "path/to/bar.png"),
-		// Symbol("BELL", "path/to/bell.png")
-		// So on, so forth
-	};
+	// Define the final 16 symbols
+	std::vector<Symbol> finalSymbolStrip = {
+		// Common Symbols (Example: appear multiple times)
+		Symbol("COFFEE", "assets/reel-coffee_mug.svg"),
+		Symbol("FLOPPY", "assets/reel-floppy.svg"),
+		Symbol("FOLDER", "assets/reel-folder_icon.svg"),
+		Symbol("WRENCH", "assets/reel-wrench.svg"),
+		Symbol("ERASER", "assets/reel-eraser.svg"),
+		Symbol("COFFEE", "assets/reel-coffee_mug.svg"),	 // Duplicate for frequency
+		Symbol("FLOPPY", "assets/reel-floppy.svg"),		 // Duplicate
+		Symbol("FOLDER", "assets/reel-folder_icon.svg"), // Duplicate
 
-	// Load these symbols onto each reel's strip
+		// Intermediate Symbols
+		Symbol("COMPUTER", "assets/reel-computer.svg"),
+		Symbol("MOBO", "assets/reel-motherboard.svg"),
+		Symbol("ROBOT", "assets/reel-robot.svg"),
+		Symbol("PACKAGE", "assets/reel-package.svg"),
+		Symbol("MAGNIFIER", "assets/reel-magnifier.svg"),
+		Symbol("COMPUTER", "assets/reel-computer.svg"), // Duplicate
+
+		// Less Common / Special Symbols
+		Symbol("FLY_SWAT", "assets/reel-fly_swat.svg"),
+		Symbol("TRAP", "assets/reel-trap.svg"),
+		Symbol("FIRE_EXT", "assets/reel-fire_extinguisher.svg"),
+		Symbol("BSOD", "assets/reel-blue_screen.svg"),
+
+		// Wild Symbol (Less frequent)
+		Symbol("RICKROLL", "assets/reel-rickroll.svg"),
+
+		// Highest Value Symbol (Rarest)
+		Symbol("LUMI", "assets/reel-lumi_mascot.svg")};
+
+	// while (finalSymbolStrip.size() < 20) {
+	//     finalSymbolStrip.push_back(finalSymbolStrip[rand() % 5]);
+	// }
+
 	for (Reel &reel : reels)
 	{
-		reel.setSymbolStrip(mvpSymbols);
+		reel.setSymbolStrip(finalSymbolStrip);
+		reel.spin(); // Give it an initial random position
+	}
+	std::cout << "Reels initialized with " << finalSymbolStrip.size() << " symbols per strip." << std::endl;
+}
+
+// Helper to setup paytable rules using symbol IDs
+void SlotMachine::initializePayoutTable()
+{
+	// Define payout rules
+	payoutTable = {
+		// Highest value for LUMI
+		PayoutRule({"LUMI", "LUMI", "LUMI"}, 500),
+
+		// Wildcard rule
+		PayoutRule({"RICKROLL", "RICKROLL", "RICKROLL"}, 250),
+
+		// Other 3-of-a-kind examples
+		PayoutRule({"BSOD", "BSOD", "BSOD"}, 150),
+		PayoutRule({"TRAP", "TRAP", "TRAP"}, 125),
+		PayoutRule({"ROBOT", "ROBOT", "ROBOT"}, 100),
+		PayoutRule({"MOBO", "MOBO", "MOBO"}, 75),
+		PayoutRule({"COMPUTER", "COMPUTER", "COMPUTER"}, 60),
+		PayoutRule({"PACKAGE", "PACKAGE", "PACKAGE"}, 50),
+		PayoutRule({"FIRE_EXT", "FIRE_EXT", "FIRE_EXT"}, 40),
+		PayoutRule({"COFFEE", "COFFEE", "COFFEE"}, 35),
+		PayoutRule({"FLOPPY", "FLOPPY", "FLOPPY"}, 30),
+		PayoutRule({"FOLDER", "FOLDER", "FOLDER"}, 25),
+		PayoutRule({"WRENCH", "WRENCH", "WRENCH"}, 20),
+		PayoutRule({"ERASER", "ERASER", "ERASER"}, 15),
+		PayoutRule({"FLY_SWAT", "FLY_SWAT", "FLY_SWAT"}, 10),
+		PayoutRule({"MAGNIFIER", "MAGNIFIER", "MAGNIFIER"}, 5)};
+	std::cout << "SlotMachine initialized with " << payoutTable.size() << " payout rules using IDs." << std::endl;
+}
+
+// --- Betting Methods ---
+bool SlotMachine::setSelectedBet(int bet)
+{
+	bool allowed = (std::find(allowedBets.begin(), allowedBets.end(), bet) != allowedBets.end());
+	if (allowed)
+	{
+		selectedBet = bet;
+		std::cout << "Bet set to: " << selectedBet << std::endl;
+		return true;
+	}
+	else
+	{
+		std::cerr << "Invalid bet amount: " << bet << std::endl;
+		return false;
 	}
 }
 
+int SlotMachine::getSelectedBet() const { return selectedBet; }
+std::vector<int> SlotMachine::getAllowedBets() const { return allowedBets; }
+
+// --- Gameplay Methods ---
 // Spin all reels if khajit has the coin
 bool SlotMachine::spinReels()
 {
-	if (credits < currentBet)
+	if (credits < selectedBet)
 	{
 		std::cerr << "Not enough credits to spin!" << std::endl; // Use cerr for errors cause fuck c++
 		return false;											 // YABROKE
 	}
-
-	credits -= currentBet;
+	credits -= selectedBet;
 	std::cout << "Good luck, Credits Remaining: " << credits << std::endl;
-
-	// Spin reels
 	for (Reel &reel : reels)
 	{
 		reel.spin();
@@ -74,86 +150,93 @@ bool SlotMachine::spinReels()
 	return true;
 }
 
-// Check for a win
+// Check for a win - *** WITH WILDCARD LOGIC ***
 bool SlotMachine::checkWinCondition()
 {
 	if (reels.size() != 3)
-	{ // Assuming 3 reels for MVP paytable logic
+	{ // Assuming 3 reels. And we'll probably stick with 3 for simplicity 
 		std::cerr << "Error: checkWinCondition assumes 3 reels for MVP." << std::endl;
 		return false;
 	}
 
-	// Get the symbols on the center payline
-	std::vector<std::string> currentCombinationIds;
+	// Get the symbols currently showing on the center payline
+	std::vector<Symbol> currentSymbols;
 	try
 	{
-		currentCombinationIds.push_back(getSymbolAt(0).id);
-		currentCombinationIds.push_back(getSymbolAt(1).id);
-		currentCombinationIds.push_back(getSymbolAt(2).id);
+		currentSymbols.push_back(getSymbolAt(0));
+		currentSymbols.push_back(getSymbolAt(1));
+		currentSymbols.push_back(getSymbolAt(2));
 	}
 	catch (const std::out_of_range &e)
 	{
-		std::cerr << "Error getting symbols for win : " << e.what() << std::endl;
+		std::cerr << "Error getting symbols for win check: " << e.what() << std::endl;
 		return false;
 	}
 
-	// Debug: Print current combination
+	// Extract the IDs for easier comparison
+	std::vector<std::string> currentCombinationIds;
+	currentCombinationIds.push_back(currentSymbols[0].id);
+	currentCombinationIds.push_back(currentSymbols[1].id);
+	currentCombinationIds.push_back(currentSymbols[2].id);
+
 	std::cout << "Checking combination: [" << currentCombinationIds[0] << ", " << currentCombinationIds[1] << ", " << currentCombinationIds[2] << "]" << std::endl;
 
-	// Iterate through the defined payout rules
+	// Iterate through the payout rules (SORTED high-to-low payout)
 	for (const PayoutRule &rule : payoutTable)
 	{
-		// Check if the rule's combination size matches the number of reels
+		// Skip if its combination length doesn't match reels
 		if (rule.combination.size() != currentCombinationIds.size())
 		{
-			continue; // Skip rule if size doesn't match
+			continue;
 		}
 
-		// Compare the current combination with the win combo
-		if (currentCombinationIds == rule.combination)
+		// --- Comparison logic with wildcard ---
+		bool ruleMatches = true; // Assume match initially
+		for (size_t i = 0; i < currentCombinationIds.size(); ++i)
 		{
-			// Found a winning match!
-			std::cout << "Winner!!! Payout: " << rule.payoutAmount << std::endl;
-			credits += rule.payoutAmount; // MONEY
-			std::cout << "New credit balance: " << credits << std::endl;
-			return true; // Return true indicating a win
+			const std::string &currentSymbolId = currentCombinationIds[i];
+			const std::string &requiredSymbolId = rule.combination[i];
+
+			// Check if the current symbol matches the required symbol OR if it's a wild
+			if (currentSymbolId != requiredSymbolId && currentSymbolId != WILD_SYMBOL_ID)
+			{
+				// If it's neither it dont work
+				ruleMatches = false;
+				break; // No need to check further
+			}
 		}
-		// PLACEHOLDER FOR MORE COMPLEX LOGIC. LIKE WILDCARDS.
+		if (ruleMatches)
+		{
+			int payout = rule.payoutAmount * selectedBet; // Scaled payout
+			std::cout << "Winner!!! [" << rule.combination[0] << ", ...]. Base Payout: " << rule.payoutAmount
+					  << ", Bet: " << selectedBet << ", Total Payout: " << payout << std::endl;
+			credits += payout; // MONEY
+			std::cout << "New credit balance: " << credits << std::endl;
+			return true;
+		}
 	}
 
-	// Not winning
+	// Loser message
 	std::cout << "You are a loser and you bring shame to your family." << std::endl;
 	return false;
 }
 
-// Get current credits
-int SlotMachine::getCredits() const
-{
-	return credits;
-}
-
-// Get symbol from a specific reel
+// --- State Accessors ---
+int SlotMachine::getCredits() const { return credits; }
 Symbol SlotMachine::getSymbolAt(int reelIndex) const
 {
 	if (reelIndex < 0 || reelIndex >= reels.size())
 	{
 		throw std::out_of_range("Reel index out of bounds.");
 	}
-	// Ensure the reel isn't in an invalid state (e.g., empty)
 	try
 	{
-		return reels.at(reelIndex).getCurrentSymbol(); // .at() = bounds checking
+		return reels.at(reelIndex).getCurrentSymbol();
 	}
 	catch (const std::out_of_range &e)
 	{
 		std::cerr << "Error accessing symbol on reel " << reelIndex << ": " << e.what() << std::endl;
-		// Re-throw or invalid symbol
 		throw;
 	}
 }
-
-// Get the number of reels
-int SlotMachine::getReelCount() const
-{
-	return reels.size();
-}
+int SlotMachine::getReelCount() const { return reels.size(); }
