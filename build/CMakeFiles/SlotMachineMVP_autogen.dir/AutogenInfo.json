@@ -391,7 +391,25 @@
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake",
 		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
-		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
+		"/opt/homebrew/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfig.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake",
+		"/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake",
+		"/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake",
+		"/opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+		"/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake",
+		"/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake",
+		"/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake",
+		"/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake",
+		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/nathan/Repositories/Hack_Week/Hack_Week_Project",
 	"CROSS_CONFIG" : false,
@@ -421,7 +439,14 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/include",
 	"MOC_COMPILATION_FILE" : "/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_SVG_LIB",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -439,6 +464,8 @@
 		"/opt/homebrew/lib/QtGui.framework",
 		"/opt/homebrew/lib/QtWidgets.framework/Headers",
 		"/opt/homebrew/lib/QtWidgets.framework",
+		"/opt/homebrew/lib/QtSvg.framework/Headers",
+		"/opt/homebrew/lib/QtSvg.framework",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
 		"/Library/Developer/CommandLineTools/usr/lib/clang/16/include",
 		"/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",

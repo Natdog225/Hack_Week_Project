@@ -1029,6 +1029,7 @@
  /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h
  /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h
  /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h
+ /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/QPixmap
  /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qaction.h
  /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qbitmap.h
  /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qbrush.h
@@ -1284,6 +1285,21 @@
  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake
  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake
  /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfig.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets.cmake
+ /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake
+ /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake
+ /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake
+ /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake
+ /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake
+ /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake
+ /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake
+ /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake
  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake
  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake
  /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake

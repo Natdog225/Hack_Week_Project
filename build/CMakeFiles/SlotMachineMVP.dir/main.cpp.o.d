@@ -1129,6 +1129,8 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: \
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QPixmap \
+  /opt/homebrew/lib/QtGui.framework/Headers/qpixmap.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h \
