@@ -1,11 +1,15 @@
 #include "SlotMachine.h"
 #include <stdexcept>
 #include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm> // For std::find
 
+// Constructor
 SlotMachine::SlotMachine(int numReels, int startingCredits)
 	: reels(numReels),
 	  credits(startingCredits),
-	  currentBet(5) // Fixed bet for MVP
+	  selectedBet(1)
 {
 	if (numReels <= 0)
 	{
@@ -13,57 +17,99 @@ SlotMachine::SlotMachine(int numReels, int startingCredits)
 	}
 	if (numReels != 3)
 	{
+		// Using user's message here
 		throw std::invalid_argument("Mvp currently goes for 3 reels");
 	}
-	initializeReels();
 
-	// --- Payout Rules ---
-	// IMPORTANT: Replace "SEVEN", "CHERRY", "LEMON" with the actual Symbol::id strings
-	// finalized by Chepe once available
-	payoutTable = {
-		// Rule 1: Three SEVENs pay 100
-		PayoutRule({"SEVEN", "SEVEN", "SEVEN"}, 100),
-		// Rule 2: Three CHERRYs pay 20
-		PayoutRule({"CHERRY", "CHERRY", "CHERRY"}, 20),
-		// Rule 3: Three LEMONs pay 10
-		PayoutRule({"LEMON", "LEMON", "LEMON"}, 10)
-		// Rule 4: Wild card symbol for like 2 lemon + wild = 3 Lemon one.
-		// PayoutRule({"*", "*", "*"}, 5) // Requires wildcard handling
-	};
-	std::cout << "SlotMachine initialized with " << payoutTable.size() << " payout rules." << std::endl;
+	// Define allowed bets (kept from previous logic)
+	allowedBets = {1, 5, 10, 15, 20, 25, 50, 100};
+	selectedBet = allowedBets[0]; // Default to the lowest bet
+
+	initializeReels();		 // Load symbols onto the reels
+	initializePayoutTable(); // Setup paytable rules
 }
 
-// Helper to load symbols
+// Helper to load symbols (Using user's symbol list example)
 void SlotMachine::initializeReels()
 {
-	// Define the symbols available
-	std::vector<Symbol> mvpSymbols = {
-		Symbol("CHERRY", "path/to/cherry.png"), // placeholders
-		Symbol("LEMON", "path/to/lemon.png"),
-		Symbol("SEVEN", "path/to/seven.png")
-		// Add more symbols to the strip later on
-		// Symbol("BAR", "path/to/bar.png"),
-		// Symbol("BELL", "path/to/bell.png")
-		// So on, so forth
+	// Using placeholders for now. Ensure "RICK_ROLL" and "LUMI_MASCOT" are included.
+	std::vector<Symbol> currentSymbols = {
+		Symbol("CHERRY"), Symbol("LEMON"), Symbol("SEVEN"),
+		Symbol("COMPUTER"), Symbol("FLOPPY_DISK"), Symbol("FOLDER_ICON"),
+		Symbol("MOTHERBOARD"), Symbol("COFFEE"), Symbol("ROBOT"),
+		Symbol("FLY_SWATTER"), Symbol("PACKAGE"), Symbol("WRENCH"),
+		Symbol("MAGNIFYING_GLASS"), Symbol("ERASER"), Symbol("FIRE_EXTINGUISHER"),
+		Symbol("TRAP"), Symbol("BSOD"), Symbol("LUMI_MASCOT"), Symbol("RICK_ROLL") // Wild
+		// Adjust frequencies by adding duplicates as needed
 	};
 
 	// Load these symbols onto each reel's strip
 	for (Reel &reel : reels)
 	{
-		reel.setSymbolStrip(mvpSymbols);
+		reel.setSymbolStrip(currentSymbols);
 	}
 }
 
+// Helper to setup paytable rules (Using user's payout rule examples)
+void SlotMachine::initializePayoutTable()
+{
+	// IMPORTANT: Update rules based on final 16 symbols and desired payouts!
+	// Use placeholder IDs for now. Ensure they match initializeReels placeholders.
+	payoutTable = {
+		// Highest value for LUMI_MASCOT
+		PayoutRule({"LUMI_MASCOT", "LUMI_MASCOT", "LUMI_MASCOT"}, 250), // Example high payout
+		// Other examples
+		PayoutRule({"SEVEN", "SEVEN", "SEVEN"}, 100),
+		PayoutRule({"COMPUTER", "COMPUTER", "COMPUTER"}, 50),
+		PayoutRule({"CHERRY", "CHERRY", "CHERRY"}, 20),
+		PayoutRule({"LEMON", "LEMON", "LEMON"}, 10)
+		// Add rules for all 16 symbols, potentially 2-symbol combos etc.
+		// Add rule for 3 Wilds ("RICK_ROLL")
+		// PayoutRule({"RICK_ROLL", "RICK_ROLL", "RICK_ROLL"}, 150),
+	};
+	std::cout << "SlotMachine initialized with " << payoutTable.size() << " payout rules." << std::endl;
+}
+
+// --- Betting Methods ---
+bool SlotMachine::setSelectedBet(int bet)
+{
+	// Check if the chosen bet is in the allowed list
+	bool allowed = (std::find(allowedBets.begin(), allowedBets.end(), bet) != allowedBets.end());
+
+	if (allowed)
+	{
+		selectedBet = bet;
+		std::cout << "Bet set to: " << selectedBet << std::endl;
+		return true;
+	}
+	else
+	{
+		std::cerr << "Invalid bet amount: " << bet << std::endl;
+		return false;
+	}
+}
+
+int SlotMachine::getSelectedBet() const
+{
+	return selectedBet;
+}
+
+std::vector<int> SlotMachine::getAllowedBets() const
+{
+	return allowedBets;
+}
+
+// --- Gameplay Methods ---
 // Spin all reels if khajit has the coin
 bool SlotMachine::spinReels()
 {
-	if (credits < currentBet)
+	if (credits < selectedBet)
 	{
 		std::cerr << "Not enough credits to spin!" << std::endl; // Use cerr for errors cause fuck c++
 		return false;											 // YABROKE
 	}
 
-	credits -= currentBet;
+	credits -= selectedBet; // Use selectedBet
 	std::cout << "Good luck, Credits Remaining: " << credits << std::endl;
 
 	// Spin reels
@@ -93,6 +139,7 @@ bool SlotMachine::checkWinCondition()
 	}
 	catch (const std::out_of_range &e)
 	{
+		// Using user's message
 		std::cerr << "Error getting symbols for win : " << e.what() << std::endl;
 		return false;
 	}
@@ -109,14 +156,16 @@ bool SlotMachine::checkWinCondition()
 			continue; // Skip rule if size doesn't match
 		}
 
-		// Compare the current combination with the win combo
+		// Compare the current combination with the win combo (Simple comparison for now)
 		if (currentCombinationIds == rule.combination)
 		{
 			// Found a winning match!
-			std::cout << "Winner!!! Payout: " << rule.payoutAmount << std::endl;
-			credits += rule.payoutAmount; // MONEY
+			int payout = rule.payoutAmount * selectedBet; // Keep scaled payout logic
+			// Using user's message
+			std::cout << "Winner!!! Base Payout: " << rule.payoutAmount << ", Bet: " << selectedBet << ", Total Payout: " << payout << std::endl;
+			credits += payout; // MONEY
 			std::cout << "New credit balance: " << credits << std::endl;
-			return true; // Return true indicating a win
+			return true; // Win
 		}
 		// PLACEHOLDER FOR MORE COMPLEX LOGIC. LIKE WILDCARDS.
 	}
@@ -126,6 +175,7 @@ bool SlotMachine::checkWinCondition()
 	return false;
 }
 
+// --- State Accessors ---
 // Get current credits
 int SlotMachine::getCredits() const
 {
