@@ -10,13 +10,14 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 # Find the Qt6 package
-find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Widgets Svg REQUIRED)
 
 add_executable(SlotMachineMVP
 	main.cpp
 	Reel.cpp
 	SlotMachine.cpp
 	GameWindow.cpp
+	resources.qrc
 	# Add other .cpp files here later, you know, when they're done.
 	# Add .h files if not automatically found
 )
@@ -26,6 +27,7 @@ target_link_libraries(SlotMachineMVP PRIVATE
 	Qt6::Core
 	Qt6::Gui
 	Qt6::Widgets
+	Qt6::Svg
 )
 
 # Add include directories if your headers are in specific folders

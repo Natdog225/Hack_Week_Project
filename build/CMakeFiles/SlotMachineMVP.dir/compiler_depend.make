@@ -903,6 +903,7 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
   CMakeFiles/4.0.0/CMakeSystem.cmake \
   SlotMachineMVP_autogen/moc_predefs.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/main.cpp \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/resources.qrc \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/q20iterator.h \
@@ -1028,6 +1029,7 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
+  /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/QPixmap \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
@@ -1283,6 +1285,21 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
   /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake \
   /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
   /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfig.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake \
   /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
   /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
   /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake \
@@ -1732,6 +1749,22 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/nested_exception.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/container_adaptor.h \
@@ -2189,10 +2222,12 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/execution \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
@@ -2388,7 +2423,6 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/GameWindow.h \
-  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h \
@@ -2413,6 +2447,7 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /opt/homebrew/include/QtCore/qbytearrayalgorithms.h \
   /opt/homebrew/include/QtCore/qbytearraylist.h \
   /opt/homebrew/include/QtCore/qbytearrayview.h \
+  /opt/homebrew/include/QtCore/qcalendar.h \
   /opt/homebrew/include/QtCore/qchar.h \
   /opt/homebrew/include/QtCore/qcompare.h \
   /opt/homebrew/include/QtCore/qcompare_impl.h \
@@ -2426,9 +2461,14 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /opt/homebrew/include/QtCore/qcontiguouscache.h \
   /opt/homebrew/include/QtCore/qdarwinhelpers.h \
   /opt/homebrew/include/QtCore/qdatastream.h \
+  /opt/homebrew/include/QtCore/qdatetime.h \
   /opt/homebrew/include/QtCore/qdebug.h \
+  /opt/homebrew/include/QtCore/qdirlisting.h \
   /opt/homebrew/include/QtCore/qendian.h \
   /opt/homebrew/include/QtCore/qexceptionhandling.h \
+  /opt/homebrew/include/QtCore/qfile.h \
+  /opt/homebrew/include/QtCore/qfiledevice.h \
+  /opt/homebrew/include/QtCore/qfileinfo.h \
   /opt/homebrew/include/QtCore/qflags.h \
   /opt/homebrew/include/QtCore/qfloat16.h \
   /opt/homebrew/include/QtCore/qforeach.h \
@@ -2446,6 +2486,7 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /opt/homebrew/include/QtCore/qlatin1stringview.h \
   /opt/homebrew/include/QtCore/qline.h \
   /opt/homebrew/include/QtCore/qlist.h \
+  /opt/homebrew/include/QtCore/qlocale.h \
   /opt/homebrew/include/QtCore/qlogging.h \
   /opt/homebrew/include/QtCore/qmalloc.h \
   /opt/homebrew/include/QtCore/qmap.h \
@@ -2502,6 +2543,7 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /opt/homebrew/include/QtCore/qtenvironmentvariables.h \
   /opt/homebrew/include/QtCore/qtextstream.h \
   /opt/homebrew/include/QtCore/qtformat_impl.h \
+  /opt/homebrew/include/QtCore/qtimezone.h \
   /opt/homebrew/include/QtCore/qtmetamacros.h \
   /opt/homebrew/include/QtCore/qtnoop.h \
   /opt/homebrew/include/QtCore/qtpreprocessorsupport.h \
@@ -2557,8 +2599,14 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: /Users/nathan/Repositories/Hack_
   /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
   /opt/homebrew/include/QtWidgets/qwidget.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
+  /opt/homebrew/lib/QtCore.framework/Headers/QDir \
   /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdir.h \
   /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QPixmap \
+  /opt/homebrew/lib/QtGui.framework/Headers/qpixmap.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QHBoxLayout \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
@@ -4182,6 +4230,7 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: /Users/nathan/Repositories/Hack
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/id.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__threading_support \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/make_tuple_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/pair_like.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/sfinae_helpers.h \
@@ -4391,6 +4440,7 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: /Users/nathan/Repositories/Hack
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/mutex \
@@ -4571,7 +4621,6 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: /Users/nathan/Repositories/Hack
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
-  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h
@@ -5709,6 +5758,8 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o: Slo
   /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QPixmap \
+  /opt/homebrew/lib/QtGui.framework/Headers/qpixmap.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h
 
@@ -6748,7 +6799,6 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/GameWindow.h \
-  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h \
@@ -6919,6 +6969,8 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
   /opt/homebrew/include/QtWidgets/qtwidgets-config.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsexports.h \
   /opt/homebrew/include/QtWidgets/qtwidgetsglobal.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QPixmap \
+  /opt/homebrew/lib/QtGui.framework/Headers/qpixmap.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QApplication \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h \
@@ -6926,8 +6978,6 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/qapplication.h:
-
-/opt/homebrew/include/QtCore/qlocale.h:
 
 /opt/homebrew/include/QtCore/qeventloop.h:
 
@@ -6957,9 +7007,15 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 
 /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel:
 
+/opt/homebrew/lib/QtGui.framework/Headers/QPixmap:
+
 /opt/homebrew/lib/QtCore.framework/Headers/qstring.h:
 
 /opt/homebrew/lib/QtCore.framework/Headers/QString:
+
+/opt/homebrew/lib/QtCore.framework/Headers/QDir:
+
+/opt/homebrew/lib/QtCore.framework/Headers/QDebug:
 
 /opt/homebrew/include/QtWidgets/qframe.h:
 
@@ -6996,8 +7052,6 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 /opt/homebrew/include/QtCore/qversiontagging.h:
 
 /opt/homebrew/include/QtCore/qvariant.h:
-
-/opt/homebrew/include/QtCore/qutf8stringview.h:
 
 /opt/homebrew/include/QtCore/qurl.h:
 
@@ -7059,6 +7113,8 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 
 /opt/homebrew/include/QtCore/qmath.h:
 
+/opt/homebrew/include/QtCore/qlocale.h:
+
 /opt/homebrew/include/QtCore/qline.h:
 
 /opt/homebrew/include/QtWidgets/qboxlayout.h:
@@ -7072,6 +7128,10 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 /opt/homebrew/include/QtCore/qfunctionpointer.h:
 
 /opt/homebrew/include/QtCore/qflags.h:
+
+/opt/homebrew/include/QtCore/qdirlisting.h:
+
+/opt/homebrew/include/QtCore/qdatetime.h:
 
 /opt/homebrew/include/QtCore/qdarwinhelpers.h:
 
@@ -7114,8 +7174,6 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 /opt/homebrew/include/QtCore/q20iterator.h:
 
 /opt/homebrew/include/QtCore/q20functional.h:
-
-/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h:
 
@@ -7303,6 +7361,8 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ios:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip:
+
 /opt/homebrew/include/QtCore/qxptype_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list:
@@ -7348,6 +7408,8 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/rel_ops.h:
+
+/opt/homebrew/include/QtCore/qcalendar.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/priority_tag.h:
 
@@ -7466,8 +7528,6 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_final.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_default_constructible.h:
 
@@ -7937,6 +7997,22 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perms.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_enum.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_time_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h:
+
+/opt/homebrew/include/QtCore/qutf8stringview.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/terminate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/operations.h:
@@ -8099,6 +8175,8 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/upper_bound.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unwrap_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
@@ -8137,27 +8215,31 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/rotate.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__concepts/different_from.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove.h:
+
+/opt/homebrew/include/QtCore/qtmochelpers.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_upper_bound.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_unique_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_unique.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_transform.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_swap_ranges.h:
 
-/opt/homebrew/Cellar/qt/6.9.0/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_stable_sort.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_starts_with.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_stable_partition.h:
 
@@ -8176,10 +8258,6 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_search_n.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_search.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/unary_function.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_rotate_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h:
 
@@ -8541,8 +8619,6 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_unique_copy.h:
-
 /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map:
@@ -8631,6 +8707,24 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake:
 
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/unary_function.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_rotate_copy.h:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfig.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/any_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/TargetConditionals.h:
@@ -8644,6 +8738,8 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h:
 
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
 
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
@@ -8703,8 +8799,6 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month.h:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake:
@@ -8717,7 +8811,11 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QPdfPluginConfig.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
 
@@ -8977,10 +9075,6 @@ SlotMachineMVP_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake:
 
-/opt/homebrew/include/QtCore/qtmochelpers.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_upper_bound.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
 
 /opt/homebrew/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
@@ -9203,6 +9297,8 @@ SlotMachineMVP_autogen/EWIEGA46WW/moc_GameWindow.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h:
+
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qpalette.h:
@@ -9229,6 +9325,8 @@ SlotMachineMVP_autogen/EWIEGA46WW/moc_GameWindow.cpp:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
+/opt/homebrew/include/QtCore/qfile.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qbitmap.h:
@@ -9250,6 +9348,8 @@ SlotMachineMVP_autogen/EWIEGA46WW/moc_GameWindow.cpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__atomic/fence.h:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qtypes.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qttypetraits.h:
 
@@ -9359,6 +9459,8 @@ SlotMachineMVP_autogen/EWIEGA46WW/moc_GameWindow.cpp:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qmargins.h:
 
+/opt/homebrew/include/QtCore/qfiledevice.h:
+
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qmap.h:
@@ -9366,6 +9468,8 @@ SlotMachineMVP_autogen/EWIEGA46WW/moc_GameWindow.cpp:
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qmalloc.h:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qlist.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/cmake/Qt6/QtPublicTestHelpers.cmake:
 
@@ -9510,6 +9614,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_object.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h:
+
+/opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/QPixmap:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h:
 
@@ -9769,6 +9875,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h:
 
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/iter_swap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/stdbool.h:
@@ -9927,6 +10035,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__utility/forward.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_starts_with.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__utility/exception_guard.h:
@@ -9954,6 +10064,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/countl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__utility/auto_cast.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/void_t.h:
 
@@ -9990,6 +10102,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/noexcept_move_assign_container.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/negation.h:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_locale.h:
 
@@ -10085,6 +10199,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__atomic/atomic_flag.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset:
@@ -10116,8 +10232,6 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
-
-/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/PayoutRule.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__exception/exception.h:
 
@@ -10177,6 +10291,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/copy_move_common.h:
 
+/opt/homebrew/lib/QtCore.framework/Headers/qdir.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/type_list.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h:
@@ -10224,6 +10340,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_partial_sort_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/unordered_map:
+
+/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/resources.qrc:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
 
@@ -10352,6 +10470,10 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/same_as.h:
 
 /opt/homebrew/lib/cmake/Qt6Core/Qt6CorePlugins.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/reverse.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_function.h:
 
@@ -10508,6 +10630,10 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/allocator.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/count_if.h:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
 
@@ -10779,6 +10905,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/concepts.h:
 
+/opt/homebrew/include/QtCore/qtimezone.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__hash_table:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_void.h:
@@ -10826,6 +10954,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__fwd/pair.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cwctype:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/stdexcept:
 
@@ -10897,6 +11027,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_lower_bound.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/filesystem:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/shuffle_order_engine.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/bit_reference.h:
@@ -10952,8 +11084,6 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_is_permutation.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__exception/terminate.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_starts_with.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__exception/operations.h:
 
@@ -11185,6 +11315,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__compare/common_comparison_category.h:
 
+/opt/homebrew/lib/QtCore.framework/Headers/qdebug.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_reverse.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__atomic/aliases.h:
@@ -11272,6 +11404,10 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /opt/homebrew/include/QtCore/qmargins.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__concepts/different_from.h:
 
 /opt/homebrew/include/QtWidgets/qtwidgets-config.h:
 
@@ -11395,8 +11531,6 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/remove.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/buffer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_stable_partition.h:
@@ -11471,8 +11605,6 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_partition.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/replace_copy.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/TargetConditionals.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/move_backward.h:
@@ -11508,6 +11640,10 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_max_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
+
+/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__atomic/atomic.h:
 
@@ -11651,8 +11787,6 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_transform.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_abort.h:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake:
@@ -11727,11 +11861,15 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__random/log2.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__numeric/pstl_transform_reduce.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake:
 
@@ -11959,8 +12097,6 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/year_month.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/count_if.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_gid_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h:
@@ -12005,9 +12141,17 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/sort.h:
 
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__tuple/tuple_size.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__compare/compare_weak_order_fallback.h:
+
+/opt/homebrew/lib/QtGui.framework/Headers/qpixmap.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_stable_sort.h:
+
+/opt/homebrew/Cellar/qt/6.9.0/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/roots.h:
 
@@ -12036,6 +12180,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_signed.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
+
+/opt/homebrew/include/QtCore/qfileinfo.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/is_permutation.h:
 

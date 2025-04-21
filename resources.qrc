@@ -1,0 +1,20 @@
+    <!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/">
+        <file alias="reel-blue_screen.svg">assets/reel-blue_screen.svg</file>
+        <file alias="reel-coffee_mug.svg">assets/reel-coffee_mug.svg</file>
+        <file alias="reel-computer.svg">assets/reel-computer.svg</file>
+        <file alias="reel-eraser.svg">assets/reel-eraser.svg</file>
+        <file alias="reel-file_folder.svg">assets/reel-file_folder.svg</file>
+        <file alias="reel-fire_extinguisher.svg">assets/reel-fire_extinguisher.svg</file>
+        <file alias="reel-floppy.svg">assets/reel-floppy.svg</file>
+        <file alias="reel-fly_swat.svg">assets/reel-fly_swat.svg</file>
+        <file alias="reel-lumi_mascot.svg">assets/reel-lumi_mascot.svg</file>
+        <file alias="reel-magnifier.svg">assets/reel-magnifier.svg</file>
+        <file alias="reel-motherboard.svg">assets/reel-motherboard.svg</file>
+        <file alias="reel-package.svg">assets/reel-package.svg</file>
+        <file alias="reel-rickroll.svg">assets/reel-rickroll.svg</file>
+        <file alias="reel-robot.svg">assets/reel-robot.svg</file>
+        <file alias="reel-trap.svg">assets/reel-trap.svg</file>
+        <file alias="reel-wrench.svg">assets/reel-wrench.svg</file>
+        </qresource>
+    </RCC>
