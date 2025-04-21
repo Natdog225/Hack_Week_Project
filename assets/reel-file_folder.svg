@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="reel-file_folder.svg"
+   xml:space="preserve"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     inkscape:zoom="1.079551"
+     inkscape:cx="158.86234"
+     inkscape:cy="119.49412"
+     inkscape:window-width="1920"
+     inkscape:window-height="1174"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" /><defs
+     id="defs1" /><style
+     type="text/css"
+     id="style1">
+	.st0{fill:#00003C;}
+	.st1{fill:#64648C;}
+	.st2{fill:#1ED2AF;}
+</style><g
+     id="g14"
+     transform="matrix(0.95309021,0,0,1.0541357,18.846138,12.17705)"><rect
+       style="fill:#1ed2af;fill-opacity:1;stroke-width:1.59942"
+       id="rect14"
+       width="141.20425"
+       height="157.00101"
+       x="364.3284"
+       y="66.290527"
+       ry="26.178133" /><path
+       style="display:none;fill:#1ed2af;fill-opacity:1"
+       d="m 494.44502,385.0333 -42.3111,44.6476 v -44.87249 z"
+       id="path15" /><rect
+       style="fill:#1ed2af;fill-opacity:1;stroke-width:1.06998"
+       id="rect13"
+       width="454.81"
+       height="297.14575"
+       x="50.722645"
+       y="99.166306"
+       ry="38.265251" /><rect
+       style="fill:#00003c;fill-opacity:1;stroke-width:1.02323"
+       id="rect12"
+       width="473.99585"
+       height="260.74835"
+       x="-42.547009"
+       y="143.60704"
+       ry="34.52401"
+       transform="matrix(1,0,0.1984637,0.98010824,0,0)" /></g></svg>
