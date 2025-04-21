@@ -227,6 +227,30 @@ SlotMachine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP.dir/build.make CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.s
 .PHONY : SlotMachine.cpp.s
 
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.o: SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP.dir/build.make CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.i: SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP.dir/build.make CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.s: SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP.dir/build.make CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 SlotMachineMVP_autogen/mocs_compilation.o: SlotMachineMVP_autogen/mocs_compilation.cpp.o
 .PHONY : SlotMachineMVP_autogen/mocs_compilation.o
 
@@ -295,6 +319,9 @@ help:
 	@echo "... SlotMachine.o"
 	@echo "... SlotMachine.i"
 	@echo "... SlotMachine.s"
+	@echo "... SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... SlotMachineMVP_autogen/mocs_compilation.o"
 	@echo "... SlotMachineMVP_autogen/mocs_compilation.i"
 	@echo "... SlotMachineMVP_autogen/mocs_compilation.s"

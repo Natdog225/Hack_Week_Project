@@ -84,16 +84,16 @@ clean: CMakeFiles/SlotMachineMVP_autogen.dir/clean
 # Target rules for target CMakeFiles/SlotMachineMVP.dir
 
 # All Build rule for target.
-CMakeFiles/SlotMachineMVP.dir/all: CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir/all
 CMakeFiles/SlotMachineMVP.dir/all: CMakeFiles/SlotMachineMVP_autogen.dir/all
+CMakeFiles/SlotMachineMVP.dir/all: CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP.dir/build.make CMakeFiles/SlotMachineMVP.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP.dir/build.make CMakeFiles/SlotMachineMVP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target SlotMachineMVP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target SlotMachineMVP"
 .PHONY : CMakeFiles/SlotMachineMVP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SlotMachineMVP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SlotMachineMVP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles 0
 .PHONY : CMakeFiles/SlotMachineMVP.dir/rule
@@ -105,7 +105,7 @@ SlotMachineMVP: CMakeFiles/SlotMachineMVP.dir/rule
 # codegen rule for target.
 CMakeFiles/SlotMachineMVP.dir/codegen: CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP.dir/build.make CMakeFiles/SlotMachineMVP.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target SlotMachineMVP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target SlotMachineMVP"
 .PHONY : CMakeFiles/SlotMachineMVP.dir/codegen
 
 # clean rule for target.
@@ -152,7 +152,7 @@ CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir/clean:
 CMakeFiles/SlotMachineMVP_autogen.dir/all: CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP_autogen.dir/build.make CMakeFiles/SlotMachineMVP_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP_autogen.dir/build.make CMakeFiles/SlotMachineMVP_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=8 "Built target SlotMachineMVP_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=10 "Built target SlotMachineMVP_autogen"
 .PHONY : CMakeFiles/SlotMachineMVP_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -169,7 +169,7 @@ SlotMachineMVP_autogen: CMakeFiles/SlotMachineMVP_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/SlotMachineMVP_autogen.dir/codegen: CMakeFiles/SlotMachineMVP_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SlotMachineMVP_autogen.dir/build.make CMakeFiles/SlotMachineMVP_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=8 "Finished codegen for target SlotMachineMVP_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=10 "Finished codegen for target SlotMachineMVP_autogen"
 .PHONY : CMakeFiles/SlotMachineMVP_autogen.dir/codegen
 
 # clean rule for target.

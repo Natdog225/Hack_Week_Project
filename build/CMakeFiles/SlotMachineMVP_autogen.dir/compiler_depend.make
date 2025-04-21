@@ -1028,6 +1028,7 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qyieldcpu.h \
+  /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/QPixmap \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
@@ -1283,6 +1284,21 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
   /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake \
   /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
   /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfig.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake \
+  /opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake \
   /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
   /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
   /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake \
@@ -1407,6 +1423,20 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
 
 /opt/homebrew/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake:
 
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfig.cmake:
+
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake:
@@ -1458,6 +1488,8 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake:
 
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
 
@@ -1920,6 +1952,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/CMakeLists.txt:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h:
+
+/opt/homebrew/Cellar/qt/6.9.0/lib/QtGui.framework/Versions/A/Headers/QPixmap:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stdarg_va_list.h:
 
@@ -2539,6 +2573,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h:
 
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__system_error/errc.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h:
@@ -2650,6 +2686,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_in_addr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/allocator.h:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
 
@@ -3331,6 +3369,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
 
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/is_transparent.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_signed_integer.h:
@@ -3472,6 +3512,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_max_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake:
 
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qfunctionpointer.h:
 
@@ -3693,6 +3735,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
 
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake:
+
 /opt/homebrew/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/pstl_transform.h:
@@ -3776,6 +3820,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityMacros.h:
+
+/opt/homebrew/lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/minmax.h:
 
@@ -3982,6 +4028,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_all_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/sort.h:
+
+/opt/homebrew/lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__tuple/tuple_size.h:
 
