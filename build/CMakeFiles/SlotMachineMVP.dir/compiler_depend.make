@@ -4625,6 +4625,8 @@ CMakeFiles/SlotMachineMVP.dir/SlotMachine.cpp.o: /Users/nathan/Repositories/Hack
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h
 
+CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp.o: SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp
+
 CMakeFiles/SlotMachineMVP.dir/SlotMachineMVP_autogen/mocs_compilation.cpp.o: SlotMachineMVP_autogen/mocs_compilation.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
@@ -7606,6 +7608,8 @@ CMakeFiles/SlotMachineMVP.dir/main.cpp.o: /Users/nathan/Repositories/Hack_Week/H
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_condition.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/error_category.h:
+
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/errc.h:
 

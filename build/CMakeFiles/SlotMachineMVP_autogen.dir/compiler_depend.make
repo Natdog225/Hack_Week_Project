@@ -903,6 +903,7 @@ SlotMachineMVP_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOS
   CMakeFiles/4.0.0/CMakeSystem.cmake \
   SlotMachineMVP_autogen/moc_predefs.h \
   /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/main.cpp \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/resources.qrc \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
   /opt/homebrew/Cellar/qt/6.9.0/lib/QtCore.framework/Versions/A/Headers/q20iterator.h \
@@ -2464,6 +2465,8 @@ CMakeFiles/4.0.0/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/unordered_map:
+
+/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/resources.qrc:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/conjunction.h:
 

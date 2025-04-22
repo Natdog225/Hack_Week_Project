@@ -22,7 +22,7 @@ SlotMachine::SlotMachine(int numReels, int startingCredits)
 	}
 
 	// Define allowed bets
-	allowedBets = {1, 5, 10, 15, 20, 25, 50, 100};
+	allowedBets = {1, 5, 10, 15, 20, 25, 50, 100, 250, 500, 750, 1000};
 	selectedBet = allowedBets[0]; // Default to the lowest bet
 
 	initializeReels();		 // Load symbols onto the reels
