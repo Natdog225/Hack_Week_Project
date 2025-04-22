@@ -10,7 +10,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 # Find the Qt6 package
-find_package(Qt6 COMPONENTS Core Gui Widgets Svg REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Widgets Svg Multimedia REQUIRED)
 
 add_executable(SlotMachineMVP
 	main.cpp
@@ -28,6 +28,7 @@ target_link_libraries(SlotMachineMVP PRIVATE
 	Qt6::Gui
 	Qt6::Widgets
 	Qt6::Svg
+	Qt6::Multimedia
 )
 
 # Add include directories if your headers are in specific folders
