@@ -78,8 +78,11 @@ SlotMachineMVP_autogen/timestamp: CMakeFiles/SlotMachineMVP.dir/compiler_depend.
 
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/resources.qrc
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/SlotMachineMVP_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/Bet.wav
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-file_folder.svg
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-fly_swat.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/pull_and_spin.wav
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/win_sound.wav
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-robot.svg
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-fire_extinguisher.svg
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-eraser.svg
@@ -94,6 +97,7 @@ SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-computer.svg
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-trap.svg
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-magnifier.svg
+SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/backround_ambience.wav
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /opt/homebrew/share/qt/libexec/rcc
 SlotMachineMVP_autogen/EWIEGA46WW/qrc_resources.cpp: /opt/homebrew/share/qt/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
