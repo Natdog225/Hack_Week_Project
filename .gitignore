@@ -1,0 +1,86 @@
+# ~/.gitignore file for C++/Qt/CMake projects
+
+# Build output directories
+[Bb]uild/
+[Bb]uild*/
+build/
+build*/
+cmake-build-*/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+
+# Makefiles (CMake generates these)
+Makefile
+*.make
+
+# Qt generated files
+*_autogen/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+
+# Executables and Libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+# Add your specific executable name if needed (optional)
+SlotMachineMVP
+
+# Object files
+*.o
+*.obj
+*.lo
+*.la
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.pro.shared
+*.qbs.user
+*.creator.user
+# Visual Studio Code
+.vscode/
+# Visual Studio
+*.VC.db
+*.suo
+*.user
+*.vcxproj.user
+# CLion
+.idea/
+# Xcode
+*.xcscheme
+*.xcworkspace/
+xcuserdata/
+
+# Crash reports / Logs
+*.log
+*.dmp
+
+# Other temporary files
+*~
+*.bak
+*.swp
