@@ -1,7 +1,7 @@
-#include "GameWindow.h"  // Include your main window header
-#include "SlotMachine.h" // Include your game logic header
+#include "GameWindow.h"
+#include "SlotMachine.h"
 #include <QApplication>
-#include <iostream>      // For error handling
+#include <iostream>
 
 int main(int argc, char *argv[]) {
 	QApplication app(argc, argv);
