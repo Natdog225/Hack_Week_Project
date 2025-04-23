@@ -26,6 +26,13 @@ public:
 	// Get the symbol
 	Symbol getCurrentSymbol() const;
 
+	// Gets the symbol visually above the current one (wraps around)
+	Symbol getSymbolAbove() const;
+	// Gets the symbol visually below the current one (wraps around)
+	Symbol getSymbolBelow() const;
+	// Helper to get symbol at a specific offset from current (handles wrap)
+	Symbol getSymbolAtOffset(int offset) const;
+
 	// Get the entire symbol strip for drawing reels
 	const std::vector<Symbol> &getSymbolStrip() const;
 
