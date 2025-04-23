@@ -9,8 +9,11 @@
 	"INCLUDE_DIR" : "/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/SlotMachineMVP_autogen/include",
 	"INPUTS" : 
 	[
+		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/Bet.wav",
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-file_folder.svg",
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-fly_swat.svg",
+		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/pull_and_spin.wav",
+		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/win_sound.wav",
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-robot.svg",
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-fire_extinguisher.svg",
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-eraser.svg",
@@ -24,7 +27,8 @@
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-floppy.svg",
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-computer.svg",
 		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-trap.svg",
-		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-magnifier.svg"
+		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/reel-magnifier.svg",
+		"/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/assets/sounds/backround_ambience.wav"
 	],
 	"LOCK_FILE" : "/Users/nathan/Repositories/Hack_Week/Hack_Week_Project/build/CMakeFiles/SlotMachineMVP_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
