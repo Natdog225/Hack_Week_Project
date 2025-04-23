@@ -77,7 +77,6 @@ Symbol Reel::getSymbolAtOffset(int offset) const
 
 	int stripSize = static_cast<int>(symbolStrip.size());
 	// Calculate the target index with wrap-around using modulo
-	// Adding stripSize before modulo handles negative results correctly
 	int targetIndex = (currentSymbolIndex + offset + stripSize) % stripSize;
 
 	return symbolStrip.at(targetIndex); // .at() provides bounds checking (though modulo should prevent issues)
