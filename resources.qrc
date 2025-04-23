@@ -16,5 +16,9 @@
         <file alias="reel-robot.svg">assets/reel-robot.svg</file>
         <file alias="reel-trap.svg">assets/reel-trap.svg</file>
         <file alias="reel-wrench.svg">assets/reel-wrench.svg</file>
+        <file alias="spin_sound.wav">assets/sounds/pull_and_spin.wav</file>
+        <file alias="Bet.wav">assets/sounds/Bet.wav</file>
+        <file alias="win_sound.wav">assets/sounds/win_sound.wav</file>
+        <file alias="backround_ambience.wav">assets/sounds/backround_ambience.wav</file>
         </qresource>
     </RCC>
