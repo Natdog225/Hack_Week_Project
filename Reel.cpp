@@ -54,6 +54,33 @@ Symbol Reel::getCurrentSymbol() const
 	}
 	return symbolStrip.at(currentSymbolIndex); // .at() provides bounds checking
 }
+Symbol Reel::getSymbolAbove() const
+{
+	return getSymbolAtOffset(-1);
+}
+
+// Gets the symbol visually below the current one (index + 1, wraps around)
+Symbol Reel::getSymbolBelow() const
+{
+	return getSymbolAtOffset(1);
+}
+
+// Helper to get symbol at a specific offset from current (handles wrap)
+Symbol Reel::getSymbolAtOffset(int offset) const
+{
+	if (symbolStrip.empty() || currentSymbolIndex < 0)
+	{
+		// Return a default/empty symbol or throw
+		// std::cerr << "Attempted to get symbol from empty or unspun reel." << std::endl;
+		return Symbol("INVALID", ""); // Or throw std::out_of_range("Reel empty or index invalid");
+	}
+
+	int stripSize = static_cast<int>(symbolStrip.size());
+	// Calculate the target index with wrap-around using modulo
+	int targetIndex = (currentSymbolIndex + offset + stripSize) % stripSize;
+
+	return symbolStrip.at(targetIndex); // .at() provides bounds checking (though modulo should prevent issues)
+}
 
 const std::vector<Symbol> &Reel::getSymbolStrip() const
 {
