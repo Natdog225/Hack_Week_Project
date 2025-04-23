@@ -2,11 +2,24 @@
 #define GAMEWINDOW_H
 
 #include <QWidget>
+#include <QPushButton>
+#include <QLabel>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
+#include <QString>
+#include <QPixmap>
+#include <QTimer>
+#include <QSoundEffect>
+#include <QUrl>          // For sound file paths
+#include <QDebug>
+#include <iostream>
+#include <stdexcept>
 #include <vector>
 #include <map>
 #include <string>
-#include <QPixmap>
-#include <QTimer>
+#include <random>
+#include <numeric>
+#include <algorithm>
 
 class QPushButton;
 class QLabel;
@@ -32,6 +45,8 @@ private slots:
 	void decreaseBet();
 	void animateReelStep();
 	void stopReelAnimation(int reelIndex);
+	void flashStep();	 // Called by flash timer
+	void stopFlashing(); // Called once to stop flashing
 
 private:
 	// --- UI Elements ---
@@ -62,12 +77,23 @@ private:
 	bool isSpinning;							  // Flag to prevent re-triggering spin
 	std::vector<bool> reelStoppedVisual;
 
+	// *** NEW Members for Sound & Flash ***
+    QSoundEffect* spinSoundEffect; // Sound effect for spinning
+    QSoundEffect* winSoundEffect;  // Sound effect for winning
+	QSoundEffect* betSoundEffect; // Sound effect for changing bet
+    QTimer* flashTimer;            // Timer for flashing effect steps
+    int flashCount;                // How many times to flash (decrements)
+    bool flashOn;                  // Current state of flash toggle (on/off)
+    QString originalWindowStyle;   // To restore style after flashing
+
 	// --- Helper Methods ---
-	void setupUI();			 // Helper to create and arrange widgets
-	void updateDisplay();	 // Helper to update labels based on SlotMachine state
+	void setupUI();		  // Helper to create and arrange widgets
+	void setupSounds(); //Sounds
+	void updateDisplay(); // Helper to update labels based on SlotMachine state
 	void updateReelDisplay(int reelIndex);
 	void loadSymbolImages(); // Function to load images
 	void applyStyles();
+	void startWinSequence(); // Helper to trigger flash and win sound
 };
 
 #endif // GAMEWINDOW_H

@@ -1129,6 +1129,26 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: \
   /opt/homebrew/include/QtWidgets/qsizepolicy.h \
   /opt/homebrew/include/QtGui/qcursor.h \
   /opt/homebrew/include/QtGui/qbitmap.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /opt/homebrew/include/QtWidgets/qabstractbutton.h \
+  /opt/homebrew/include/QtWidgets/qwidget.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
+  /opt/homebrew/include/QtWidgets/qframe.h \
+  /opt/homebrew/include/QtGui/qpicture.h \
+  /opt/homebrew/include/QtCore/qiodevice.h \
+  /opt/homebrew/include/QtGui/qtextdocument.h \
+  /opt/homebrew/include/QtCore/qurl.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QHBoxLayout \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /opt/homebrew/include/QtWidgets/qlayout.h \
+  /opt/homebrew/include/QtWidgets/qlayoutitem.h \
+  /opt/homebrew/include/QtWidgets/qboxlayout.h \
+  /opt/homebrew/include/QtWidgets/qgridlayout.h \
+  /opt/homebrew/lib/QtWidgets.framework/Headers/QVBoxLayout \
+  /opt/homebrew/lib/QtCore.framework/Headers/QString \
+  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /opt/homebrew/lib/QtGui.framework/Headers/QPixmap \
   /opt/homebrew/lib/QtGui.framework/Headers/qpixmap.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QTimer \
@@ -1138,9 +1158,44 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: \
   /opt/homebrew/include/QtCore/qeventloop.h \
   /opt/homebrew/include/QtCore/qdeadlinetimer.h \
   /opt/homebrew/include/QtCore/qelapsedtimer.h \
-  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
-  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
-  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h \
+  /opt/homebrew/lib/QtMultimedia.framework/Headers/QSoundEffect \
+  /opt/homebrew/lib/QtMultimedia.framework/Headers/qsoundeffect.h \
+  /opt/homebrew/include/QtMultimedia/qtmultimediaglobal.h \
+  /opt/homebrew/include/QtMultimedia/qtmultimedia-config.h \
+  /opt/homebrew/include/QtMultimedia/qtmultimediaexports.h \
+  /opt/homebrew/include/QtMultimedia/qaudio.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QUrl \
+  /opt/homebrew/lib/QtCore.framework/Headers/qurl.h \
+  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
+  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/container_adaptor.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/range_default_formatter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/range_formatter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_context.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg_store.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_args.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_functions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_char.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/escaped_output_table.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_floating_point.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/chars_format.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_floating_point.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integer.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_pointer.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_real_distribution.h \
@@ -1175,30 +1230,13 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/seed_seq.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/student_t_distribution.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/weibull_distribution.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QPushButton \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /opt/homebrew/include/QtWidgets/qabstractbutton.h \
-  /opt/homebrew/include/QtWidgets/qwidget.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QLabel \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qlabel.h \
-  /opt/homebrew/include/QtWidgets/qframe.h \
-  /opt/homebrew/include/QtGui/qpicture.h \
-  /opt/homebrew/include/QtCore/qiodevice.h \
-  /opt/homebrew/include/QtGui/qtextdocument.h \
-  /opt/homebrew/include/QtCore/qurl.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QHBoxLayout \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/include/QtWidgets/qlayout.h \
-  /opt/homebrew/include/QtWidgets/qlayoutitem.h \
-  /opt/homebrew/include/QtWidgets/qboxlayout.h \
-  /opt/homebrew/include/QtWidgets/qgridlayout.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/QVBoxLayout \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/SlotMachine.h \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Reel.h \
+  /Users/nathan/Repositories/Hack_Week/Hack_Week_Project/Symbol.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QGridLayout \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/QSpacerItem \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qlayoutitem.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QString \
-  /opt/homebrew/lib/QtCore.framework/Headers/qstring.h \
   /opt/homebrew/lib/QtCore.framework/Headers/QDir \
   /opt/homebrew/lib/QtCore.framework/Headers/qdir.h \
   /opt/homebrew/include/QtCore/qdirlisting.h \
@@ -1217,33 +1255,6 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/format \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/container_adaptor.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/range_default_formatter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/range_formatter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_context.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg_store.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_args.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_functions.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_char.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/escaped_output_table.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_floating_point.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/chars_format.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_floating_point.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integer.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_pointer.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/space_info.h \
@@ -1253,7 +1264,4 @@ CMakeFiles/SlotMachineMVP.dir/GameWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /opt/homebrew/include/QtCore/qfileinfo.h \
-  /opt/homebrew/include/QtCore/qtimezone.h \
-  /opt/homebrew/lib/QtCore.framework/Headers/QDebug \
-  /opt/homebrew/lib/QtCore.framework/Headers/qdebug.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream
+  /opt/homebrew/include/QtCore/qtimezone.h

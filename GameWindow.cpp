@@ -21,7 +21,9 @@
 
 // Constructor
 GameWindow::GameWindow(SlotMachine *machineLogic, QWidget *parent)
-	: QWidget(parent), slotMachine(machineLogic), currentBetIndex(0), animationTimer(nullptr), isSpinning(false), reelStoppedVisual(NUM_REELS_DISPLAYED, false)
+	: QWidget(parent), slotMachine(machineLogic), currentBetIndex(0), animationTimer(nullptr),
+	  isSpinning(false), reelStoppedVisual(NUM_REELS_DISPLAYED, false), spinSoundEffect(nullptr),
+	  winSoundEffect(nullptr), betSoundEffect(nullptr), flashTimer(nullptr), flashCount(0), flashOn(false)
 {
 	if (!slotMachine)
 	{
@@ -49,10 +51,15 @@ GameWindow::GameWindow(SlotMachine *machineLogic, QWidget *parent)
 	// Setup Timer
 	animationTimer = new QTimer(this);
 	connect(animationTimer, &QTimer::timeout, this, &GameWindow::animateReelStep);
+	flashTimer = new QTimer(this);
+	connect(flashTimer, &QTimer::timeout, this, &GameWindow::flashStep);
 
 	setupUI();
+	setupSounds(); // Initialize sound effects
 	loadSymbolImages();
-	applyStyles(); // Apply styles after UI is setup
+	applyStyles();							   // Apply styles after UI is setup
+	originalWindowStyle = this->styleSheet();  // Store original style BEFORE applying flash styles
+	qDebug() << "Stored original stylesheet."; // DEBUG
 	updateDisplay();
 	qDebug() << "GameWindow Constructor: Initialization Complete."; // DEBUG
 }
@@ -155,12 +162,54 @@ void GameWindow::setupUI()
 
 	// --- Set Window Properties ---
 	setWindowTitle("Money-Taker 3000");
-	setMinimumSize(450, 400); // Adjust size as needed
+	setMinimumSize(550, 500); // Adjust size as needed
 
 	// --- Connect Signals and Slots ---
 	connect(spinButton, &QPushButton::clicked, this, &GameWindow::handleSpinButtonClicked);
 	connect(decreaseBetButton, &QPushButton::clicked, this, &GameWindow::decreaseBet);
 	connect(increaseBetButton, &QPushButton::clicked, this, &GameWindow::increaseBet);
+}
+
+// *** Setup Sound Effects ***
+void GameWindow::setupSounds()
+{
+	spinSoundEffect = new QSoundEffect(this);
+	spinSoundEffect->setSource(QUrl("qrc:/spin_sound.wav"));
+	spinSoundEffect->setVolume(0.75); // Adjust volume 0.0 to 1.0
+
+	winSoundEffect = new QSoundEffect(this);
+	winSoundEffect->setSource(QUrl("qrc:/win_sound.wav"));
+	winSoundEffect->setVolume(0.9);
+
+	betSoundEffect = new QSoundEffect(this);
+	betSoundEffect->setSource(QUrl("qrc:/Bet.wav"));
+	betSoundEffect->setVolume(0.6); // Adjust volume as needed
+
+	// Check if sounds loaded (optional but good)
+	if (!spinSoundEffect->isLoaded())
+	{ // Check isLoaded status
+		qWarning() << "Spin sound FAILED TO LOAD. Status:" << spinSoundEffect->status() << "Source:" << spinSoundEffect->source().toString();
+	}
+	else
+	{
+		qDebug() << "Spin sound loaded successfully.";
+	}
+	if (!winSoundEffect->isLoaded())
+	{
+		qWarning() << "Win sound FAILED TO LOAD. Status:" << winSoundEffect->status() << "Source:" << winSoundEffect->source().toString();
+	}
+	else
+	{
+		qDebug() << "Win sound loaded successfully.";
+		if (!betSoundEffect->isLoaded())
+		{
+			qWarning() << "Bet sound FAILED TO LOAD. Status:" << betSoundEffect->status() << "Source:" << betSoundEffect->source().toString();
+		}
+		else
+		{
+			qDebug() << "Bet sound loaded successfully.";
+		}
+	}
 }
 
 // Apply Qt Style Sheets (QSS) ***
@@ -311,6 +360,16 @@ void GameWindow::handleSpinButtonClicked()
 	messageLabel->setText("Spinning...");
 	qDebug() << "Buttons disabled, message set to Spinning...";
 
+	// *** Play Spin Sound ***
+	if (spinSoundEffect && spinSoundEffect->isLoaded())
+	{
+		spinSoundEffect->play();
+	}
+	else
+	{
+		qWarning() << "Spin sound not ready or not loaded.";
+	}
+
 	qDebug() << "Calling slotMachine->spinReels()...";
 	slotMachine->spinReels(); // Determine final outcome now
 	qDebug() << "slotMachine->spinReels() returned.";
@@ -398,21 +457,109 @@ void GameWindow::stopReelAnimation(int reelIndex)
 		// Update credits display
 		creditsLabel->setText("Credits: " + QString::number(slotMachine->getCredits()));
 
-		// Set final win/loss message
-		messageLabel->setText(totalPayout > 0 ? "WINNER! Payout: " + QString::number(totalPayout) : "Try Again Loser");
+		if (totalPayout > 0)
+		{
+			// *** Trigger win sequence (sound + flash) ***
+			startWinSequence();
+			messageLabel->setText("WINNER! Payout: " + QString::number(totalPayout));
+		}
+		else
+		{
+			messageLabel->setText("Try Again Loser");
+			// Re-enable buttons immediately if no win sequence
+			isSpinning = false;
+			spinButton->setEnabled(true);
+			const auto &bets = slotMachine->getAllowedBets();
+			bool canDecrease = !isSpinning && !bets.empty() && currentBetIndex > 0;
+			bool canIncrease = !isSpinning && !bets.empty() && currentBetIndex < static_cast<int>(bets.size()) - 1;
+			decreaseBetButton->setEnabled(canDecrease);
+			increaseBetButton->setEnabled(canIncrease);
+			qDebug() << "No win. Re-enabling buttons. isSpinning=false.";
+		}
 		qDebug() << "Final message set:" << messageLabel->text();
+	}
+}
 
-		// Re-enable buttons
-		isSpinning = false; // Clear overall spinning flag
+// *** Triggers win effects ***
+void GameWindow::startWinSequence()
+{
+	qDebug() << "Starting win sequence...";
+	// Play Win Sound
+	if (winSoundEffect && winSoundEffect->isLoaded())
+	{
+		winSoundEffect->play();
+		qDebug() << "Played win sound."; // DEBUG
+	}
+	else
+	{
+		qWarning() << "Win sound not ready or not loaded. Status:" << (winSoundEffect ? winSoundEffect->status() : QSoundEffect::Error);
+	}
+
+	// Start Flashing
+	flashCount = 6;																					// Number of ON/OFF cycles (e.g., 6 flashes = 3 on, 3 off)
+	flashOn = true;																					// Start with flash ON
+	int flashIntervalMs = 150;																		// Duration of each flash state (ON or OFF)
+	qDebug() << "Starting flash timer. Interval:" << flashIntervalMs << "ms, Count:" << flashCount; // DEBUG
+	flashTimer->start(flashIntervalMs);
+	flashStep(); // Call immediately to set initial flash state
+
+	// Schedule buttons to re-enable *after* flashing finishes
+	int flashDurationMs = flashCount * flashIntervalMs;
+	QTimer::singleShot(flashDurationMs + 50, this, [this]() { // Small delay after last flash
+		stopFlashing();										  // Ensure flashing stops cleanly
+		isSpinning = false;									  // Clear flag only after win sequence
 		spinButton->setEnabled(true);
-		// Enable bet buttons based on current state
 		const auto &bets = slotMachine->getAllowedBets();
 		bool canDecrease = !isSpinning && !bets.empty() && currentBetIndex > 0;
 		bool canIncrease = !isSpinning && !bets.empty() && currentBetIndex < static_cast<int>(bets.size()) - 1;
 		decreaseBetButton->setEnabled(canDecrease);
 		increaseBetButton->setEnabled(canIncrease);
-		qDebug() << "Re-enabling buttons. isSpinning=false. stopReelAnimation finished for last reel.";
+		qDebug() << "Win sequence finished. Re-enabling buttons. isSpinning=false.";
+	});
+}
+
+// *** NEW SLOT: Called by flash timer ***
+void GameWindow::flashStep()
+{
+	qDebug() << "flashStep called. FlashCount:" << flashCount << "FlashOn:" << flashOn; // DEBUG
+	if (flashCount <= 0)
+	{
+		// Timer might still be running, ensure it stops and style is restored
+		stopFlashing();
+		return;
 	}
+
+	if (flashOn)
+	{
+		// Apply flashing style (e.g., bright background)
+		// Combine with original style to avoid losing everything else
+		this->setStyleSheet("QWidget#GameWindow { background-color: yellow; }");
+		qDebug() << "Flash ON";
+	}
+	else
+	{
+		// Restore original style
+		this->setStyleSheet(originalWindowStyle);
+		qDebug() << "Flash OFF";
+	}
+
+	flashOn = !flashOn; // Toggle state
+	flashCount--;
+}
+
+// *** NEW SLOT: Stops flashing explicitly ***
+void GameWindow::stopFlashing()
+{
+	if (flashTimer->isActive())
+	{
+		qDebug() << "Stopping flashing timer.";
+		flashTimer->stop();
+	}
+	qDebug() << "Restoring original stylesheet.";
+	// Ensure original style is restored, even if timer was stopped early
+	this->setStyleSheet(originalWindowStyle);
+	flashOn = false;
+	flashCount = 0;
 }
 
 // Slot to decrease the bet
@@ -429,6 +576,16 @@ void GameWindow::decreaseBet()
 	currentBetIndex--;
 	slotMachine->setSelectedBet(bets[currentBetIndex]);
 	updateDisplay(); // Update bet label
+					 // *** Play Bet Sound ***
+	if (betSoundEffect && betSoundEffect->isLoaded())
+	{
+		betSoundEffect->play();
+		qDebug() << "Played bet sound.";
+	}
+	else
+	{
+		qWarning() << "Bet sound not ready or not loaded.";
+	}
 }
 
 // Slot to increase the bet
@@ -445,6 +602,14 @@ void GameWindow::increaseBet()
 	currentBetIndex++;
 	slotMachine->setSelectedBet(bets[currentBetIndex]);
 	updateDisplay(); // Update bet label
+	if (betSoundEffect && betSoundEffect->isLoaded())
+	{
+		betSoundEffect->play();
+	}
+	else
+	{
+		qWarning() << "Bet sound not ready or not loaded.";
+	}
 }
 
 // updateDisplay
