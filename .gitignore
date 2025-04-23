@@ -14,6 +14,7 @@ cmake_install.cmake
 CTestTestfile.cmake
 install_manifest.txt
 compile_commands.json
+qrc_resources.cpp
 
 # Makefiles (CMake generates these)
 Makefile
