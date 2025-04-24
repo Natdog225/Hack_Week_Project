@@ -1,9 +1,9 @@
 # Slot Machine in C++
 
 ## Authors
-Nathan W. ()\
-Deshon Stout (deshonjewell@gmail.com)\
-José N. Olmos ()
+Nathan W. (Nathaniel.wilson@atlasschool.com) Github: Natdog225
+Deshon Stout (deshonjewell@gmail.com) Github: DeshonS
+José N. Olmos () Github: chepeniv
 
 ## Purpose
 The purpose of this project is to create a slot machine using the C++ programming language. (Will update as we progress)
